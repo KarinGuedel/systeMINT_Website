@@ -1,0 +1,133 @@
+/* ===========================================================
+	MADAM MONOROM | monorom.com | HTML5 & CSS Project | 2020 
+   ===========================================================	*/
+/* @import url("particles-font.css");
+ */
+ @import url("particles-grid.css"); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&display=swap');
+@import url("../font/fontawesome-free/css/all.css");
+
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+.iconbox {
+    background-color: steelblue;
+    color: white;
+}
+
+.iconbox:hover{
+    background-color: navy;
+    border-radius: 20px;
+}
+header a,header a:visited,
+footer a,footer a:visited,
+.iconbox a, .iconbox a:visited {
+    color: lightskyblue;
+}
+a, a:visited {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+h1, h2, h3,h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+p{
+    line-height: 2rem;
+}
+.center{
+    text-align: center;
+}
+a.social, a.social:visited{
+    color: gainsboro;
+    padding-right: 10px; 
+}
+/* .container{ Wird benötigt wenn das grid.css auskommenteirt wurde 
+    padding: 20px;
+    } */
+
+
+
+/* -------------- navigavtion------------- 	*/
+nav {
+    background-color: navy;
+}
+
+ nav .container{
+	padding: 0;
+	 width: 100%;
+     max-width: inherit;
+	} 
+nav ul{
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	}		
+nav a,
+nav a:visited{
+	display:block;
+	color:#fff;
+	line-height:56px;
+	text-transform: uppercase;
+	border-bottom:1px solid #fff;
+	font-size:1.3rem;
+	padding:0 20px;
+	}		
+nav a:hover,
+nav a.selected {
+	background:#fff;
+	color:navy;
+	}
+nav a:not(.selected):hover:after {
+	color: navy;
+	position:absolute;
+	right: 20px;
+  font-family: 'Font Awesome 5 Free';
+	content: "\f0da";
+	font-weight: 900;
+	font-size:2rem;
+	}	
+img.responsive{
+	max-width: 100%;
+	height:auto;
+	}
+
+.pager{ 
+text-align:right; 
+margin:20px 0;
+}
+.pager a{ 
+display: inline-block;
+border:1px solid #4C6A92;
+padding:5px 10px;
+margin:0 2px;
+}
+.pager a.selected{ 
+color:#fff;
+background: navy;
+}
