@@ -1,11 +1,7 @@
 /* ===========================================================
 	MADAM MONOROM | monorom.com | HTML5 & CSS Project | 2020 
    ===========================================================	*/
-/* @import url("particles-font.css");
- */
- @import url("particles-grid.css"); 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&display=swap');
-@import url("../font/fontawesome-free/css/all.css");
+
 
 
 body {
@@ -43,6 +39,7 @@ a:hover {
 
 h1, h2, h3,h4 {
     font-family: 'Oswald', sans-serif;
+    font-weight: 500;
 }
 
 h1{
@@ -59,6 +56,8 @@ h4{
 }
 p{
     line-height: 2rem;
+    margin: 0 0 25px;
+
 }
 .center{
     text-align: center;
@@ -67,12 +66,56 @@ a.social, a.social:visited{
     color: gainsboro;
     padding-right: 10px; 
 }
-/* .container{ Wird benötigt wenn das grid.css auskommenteirt wurde 
-    padding: 20px;
-    } */
 
+/* -----------menu button --------------------------- */
+.menubutton {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  height: 27px;
+  width: 35px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+.menubutton:hover {
+  opacity: .7;
+}
+.menubutton.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+          transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.menubutton.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.menubutton.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+          transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.menubutton span {
 
-
+	background: #41454F;
+  border: none;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.menubutton span:nth-of-type(2) {
+  top: 11px;
+}
+.menubutton span:nth-of-type(3) {
+  top: 22px;
+}
 /* -------------- navigavtion------------- 	*/
 nav {
     background-color: navy;
@@ -81,7 +124,6 @@ nav {
  nav .container{
 	padding: 0;
 	 width: 100%;
-     max-width: inherit;
 	} 
 nav ul{
 	padding:0;
@@ -112,6 +154,19 @@ nav a:not(.selected):hover:after {
 	font-weight: 900;
 	font-size:2rem;
 	}	
+
+#mainnav {
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+}
+#mainnav.active {
+	visibility: visible;
+	opacity: 1;
+	height: auto;
+}
+
+
 img.responsive{
 	max-width: 100%;
 	height:auto;
@@ -131,3 +186,36 @@ margin:0 2px;
 color:#fff;
 background: navy;
 }
+
+
+/* -----------media queries --------------------------- */
+@media screen and (min-width: 640px) {
+.menubutton { 
+	display: none;
+ }
+
+ nav ul:after {
+	height: 0;
+	content: " ";
+	display: block;
+	clear: left;
+}
+nav li {
+	width: calc(100%/4);
+	float: left;
+	text-align:center;
+}	
+nav a {
+	border-bottom: none;
+}
+nav a:not(.selected):hover:after{
+	content: " ";
+	}	
+
+#mainnav {
+	visibility: visible;
+	opacity: 1;
+    height: auto;
+}
+
+ }
