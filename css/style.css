@@ -67,7 +67,8 @@ a.social, a.social:visited{
     padding-right: 10px; 
 }
 button{
-  min-width: 100px;
+  min-width: 120px;
+  margin-left: 20px;
   background-color: #F4827B;
   color: #E0FFFA;
   font-size: 1em;
