@@ -66,6 +66,16 @@ a.social, a.social:visited{
     color: gainsboro;
     padding-right: 10px; 
 }
+button{
+  min-width: 120px;
+  margin-left: 20px;
+  background-color: #F4827B;
+  color: #E0FFFA;
+  font-size: 1em;
+  border-radius: 15%;
+  border: none;
+  padding: 10px;
+}
 
 /* -----------menu button --------------------------- */
 .menubutton {
