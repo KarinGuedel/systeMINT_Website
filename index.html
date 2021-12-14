@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <html lang="de">
 
+<!--HEAD-->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MADAM MONOROM | HTML CSS Sandbox </title>
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
-	<script type="text/javascript" src="js/main.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SysteMINT | game </title>
+  <!--<link href="css/style.css" type="text/css" rel="stylesheet" media="all" /> -->
+  <link href="css/styleSM.css" type="text/css" rel="stylesheet" media="all"/>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 
+<!--BODY-->
 <body>
-    <header>
-		<div class="menubutton">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
+
+<!--logo-->
+<header>
+  <div class="menubutton">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+  </div>
+
+  <div class="container">
+    <h1><a href="index.html">Systemint Game</a></h1>
+  </div>
+</header>
+
+<!--		NAVBAR-->
+<!-- todo evtl. sollten wir navbar und header zusammenführen -->
+<nav id="mainnav">
+  <div class="container">
+    <ul>
+      <li><a href="index.html" class="selected">home</a></li>
+      <li><a href="">Spiel</a></li>
+      <li><a href="#">Lehrpersonen</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--titel-->
+<div role="main" id="content">
+  <div class="container">
+
+    <!--			todo was heisst prtcl-row ?-->
+    <div class="prtcl-row">
+      <div class="col s12 offset-l2 l8">
+        <h2>WASSERWELTEN</h2>
+        <h1>Systemint Game</h1>
+        <p>In diesem Spiel verwischen die Grenzen zwischen Ober- und Unterwasserwelt. Das Wasser und die Stoffe, die wir
+          täglich nutzen, sind in einem System miteinander verbunden. Mit rätseln, tüfteln und experimentieren kommen
+          Jugendliche den gefährlichen Stoffen auf die Spur...</p>
+      </div>
+      <button type="button">Spielen</button>
+      <button type="button">Kontakt</button>
     </div>
-    
-		<div class="container">
-			<h2><a href="index.html">Systemint Game</a></h2>
-		</div>
-	</header>
-	
-	<nav id="mainnav">
-		<div class="container">
-			<ul>
-				<li><a href="index.html" class="selected">home</a></li>
-				<li><a href="">Spiel</a></li>
-				<li><a href="#">Lehrpersonen</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Kontakt</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div role="main" id="content">
-		<div class="container">
-			<div class="prtcl-row">
-				<div class="col s12 offset-l2 l8">
-					<h1>Systemint Game</h1>
-					<p>In diesem Spiel verwischen die Grenzen zwischen Ober- und Unterwasserwelt. Das Wasser und die Stoffe, die wir täglich nutzen, sind in einem System miteinander verbunden. Mit rätseln, tüfteln und experimentieren kommen Jugendliche den gefährlichen Stoffen auf die Spur...</p>
-				</div>
-				<button type="button">Spielen</button>
-				<button type="button">Kontakt</button>
-			</div>
-			<!-- end row -->
-		</div>
-		<!-- end container -->
-		<section id="iconbox">
-			<div class="container center">
-				<div class="prtcl-row">
-					<div class="col s12 m6 l4 iconbox">
-						<a href="">
-							<h3>Design News</h3>
-							<p><i class="fas fa-book-reader fa-5x"></i></p>
-						</a>
-					</div>
-					<div class="col s12 m6 l4 iconbox">
-						<a href="#">
-							<h3>Network</h3>
-							<p><i class="fas fa-project-diagram  fa-5x"></i></p>
-						</a>
-					</div>
-					<div class="col s12 l4 iconbox">
-						<a href="#">
-							<h3>Contact us</h3>
-							<p><i class="fas fa-address-card fa-5x"></i></p>
-						</a>
-					</div>
-				</div>
-				<!-- end row -->
-			</div>
-			<!-- end container -->
-		</section>
-		<!-- end iconbox -->
-		<div class="container">
-			<div class="prtcl-row">
-				<div class="col s12 offset-l2 l8">
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-					<p>made with Love by <a href="">MADAM MONOROM</a></p>
-				</div>
-			</div>
-			<!-- end row -->
-		</div>
-		<!-- end container -->
-	</div>
-	<!-- end content -->
-	<footer>
-		<div class="container">
-			<div class="prtcl-row">
-				<div class="col s12 m6 l4">
-					<h3>Contact</h3>
-					<p>Company Name<br> Street 99<br> MM-9999 Moon<br> Fon +99 88 767 55 44<br> E-Mail <a href="mailto:no@spam.haha">company@haha.com</a></p>
-				</div>
-				<div class="col s12 m6 l8">
-					<h3>join the network</h3>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-					<p><a href="#" class="social"><i class="fab fa-facebook-square fa-3x"></i></a> <a href="#" class="social"><i class="fab fa-youtube-square fa-3x"></i></a>  <a href="#" class="social"><i class="fab fa-instagram-square fa-3x"></i></a>
-					</p>
-				</div>
-			</div>
-			<!-- end row -->
-		</div>
-	</footer>
+    <!-- end row -->
+  </div>
+
+  <!-- end container -->
+  <section id="iconbox">
+    <div class="container center">
+      <div class="prtcl-row">
+        <div class="col s12 m6 l4 iconbox">
+          <a href="">
+            <h3>Design News</h3>
+            <p><i class="fas fa-book-reader fa-5x"></i></p>
+          </a>
+        </div>
+        <div class="col s12 m6 l4 iconbox">
+          <a href="#">
+            <h3>Network</h3>
+            <p><i class="fas fa-project-diagram  fa-5x"></i></p>
+          </a>
+        </div>
+        <div class="col s12 l4 iconbox">
+          <a href="#">
+            <h3>Contact us</h3>
+            <p><i class="fas fa-address-card fa-5x"></i></p>
+          </a>
+        </div>
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end iconbox -->
+  <div class="container">
+    <div class="prtcl-row">
+      <div class="col s12 offset-l2 l8">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>made with Love by <a href="">MADAM MONOROM</a></p>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end content -->
+<footer>
+  <div class="container">
+    <div class="prtcl-row">
+      <div class="col s12 m6 l4">
+        <h3>Contact</h3>
+        <p>Company Name<br> Street 99<br> MM-9999 Moon<br> Fon +99 88 767 55 44<br> E-Mail <a
+            href="mailto:no@spam.haha">company@haha.com</a></p>
+      </div>
+      <div class="col s12 m6 l8">
+        <h3>join the network</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua.</p>
+        <p><a href="#" class="social"><i class="fab fa-facebook-square fa-3x"></i></a> <a href="#" class="social"><i
+            class="fab fa-youtube-square fa-3x"></i></a> <a href="#" class="social"><i
+            class="fab fa-instagram-square fa-3x"></i></a>
+        </p>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+</footer>
 </body>
 </html>
