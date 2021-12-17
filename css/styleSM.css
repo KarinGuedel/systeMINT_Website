@@ -18,7 +18,7 @@
 /*Buttons*/
 button {
     min-width: 120px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 30px;
     background-color: var(--salmon);
     color: #E0FFFA;
@@ -31,6 +31,7 @@ button {
 body {
     font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
     margin: 0;
     padding: 0;
     background: var(--background-blue);
@@ -46,12 +47,24 @@ h1 {
 }
 
 h2 {
-    font-weight: 300;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #E0FFFA;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 20pt;
+}
+
+h3 {
+    font-weight: 400;
     font-size: 2rem;
     color: #E0FFFA;
     text-transform: uppercase;
     margin: 0;
     margin-top: auto;
+    margin-top: 80pt;
+    margin-bottom: 20pt;
 }
 
 p {
@@ -244,7 +257,7 @@ nav a:not(.selected):hover:after {
     color: navy;
     position: absolute;
     right: 20px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Open Sans';
     content: "\f0da";
     font-weight: 900;
     font-size: 2rem;
