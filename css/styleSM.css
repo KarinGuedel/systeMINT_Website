@@ -19,6 +19,7 @@ body {
     font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
+    text-align: left;
     margin: 0;
     padding: 0;
     background: var(--background-blue);
@@ -41,13 +42,13 @@ h1 {
 
 @media only screen and (max-width: 500px) {
     h1 {
-        font-size: 3rem;
+        font-size: 3.4rem;
     }
 }
 
 h2 {
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #E0FFFA;
     text-transform: uppercase;
     margin: 0;
@@ -57,7 +58,7 @@ h2 {
 
 @media only screen and (max-width: 500px) {
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
 
     }
 }
@@ -85,274 +86,279 @@ p {
 
 @media only screen and (max-width: 500px) {
     p {
-        line-height: 1.5rem;
+        line-height: 1.7rem;
     }
 }
 
-    /*Navbar*/
-    /*Header*/
-    header {
-        margin-bottom: 50px;
-    }
-
-    /*Title*/
-    .title {
-        margin: auto;
-    }
-
-    /*Intro*/
-    .intro {
-        margin: auto;
-        text-align: justify;
-        margin-bottom: 150px;
-    }
-
-    /*Content*/
-    .content {
-        margin: auto;
-        text-align: justify;
-        margin-bottom: 50px;
-    }
-
-    .last-content {
-        margin: auto;
-        text-align: justify;
-        margin-bottom: 150px;
-    }
-
-    .content-no-button {
-        margin: auto;
-        text-align: justify;
-        margin-bottom: 150px;
-    }
-
-    /*Footer*/
-    footer {
-        margin: auto;
-    }
-
-    /*Buttons*/
-    button {
-        min-width: 120px;
-        margin-left: 0;
-        margin-right: 30px;
-        background-color: var(--salmon);
-        color: #E0FFFA;
-        font-size: 1em;
-        border-radius: 11px;
-        border: none;
-        padding: 10px;
-    }
-
-    /*Abschnitt 1 - xy*/
-    /* ------- todo alles noch anpassen --- */
-    header,
-    footer,
-    .iconbox {
-        background-color: var(--background-blue);
-        color: white;
-    }
-
-    .iconbox:hover {
-        background-color: navy;
-        border-radius: 20px;
-    }
-
-    header a, header a:visited,
-    footer a, footer a:visited,
-    .iconbox a, .iconbox a:visited {
-        color: lightskyblue;
-    }
-
-    a, a:visited {
-        color: steelblue;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: red;
-    }
+/*Navbar*/
 
 
-    .center {
-        text-align: center;
-    }
+/*Header*/
+header {
+    margin-bottom: 100px;
+}
 
-    a.social, a.social:visited {
-        color: gainsboro;
-        padding-right: 10px;
-    }
+/*Title*/
+.title {
+    margin: auto;
+}
+
+/*Intro*/
+.intro {
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+/*Content*/
+
+.content1 {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.content2 {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.content3 {
+    margin: auto;
+    margin-bottom: 150px;
+}
 
 
-    /* -----------menu button --------------------------- */
+.content-no-button {
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+/*Footer*/
+footer {
+    margin: auto;
+}
+
+/*Buttons*/
+button {
+    min-width: 120px;
+    margin-left: 0;
+    margin-right: 30px;
+    background-color: var(--salmon);
+    color: #E0FFFA;
+    font-size: 1em;
+    border-radius: 11px;
+    border: none;
+    padding: 10px;
+}
+
+/*Abschnitt 1 - xy*/
+/* ------- todo alles noch anpassen --- */
+header,
+footer,
+.iconbox {
+    background-color: var(--background-blue);
+    color: white;
+}
+
+.iconbox:hover {
+    background-color: navy;
+    border-radius: 20px;
+}
+
+header a, header a:visited,
+footer a, footer a:visited,
+.iconbox a, .iconbox a:visited {
+    color: lightskyblue;
+}
+
+a, a:visited {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+
+.center {
+    text-align: center;
+}
+
+a.social, a.social:visited {
+    color: gainsboro;
+    padding-right: 10px;
+}
+
+
+/* -----------menu button --------------------------- */
+.menubutton {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    height: 27px;
+    width: 35px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+}
+
+.menubutton:hover {
+    opacity: .7;
+}
+
+.menubutton.active .top {
+    -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: var(--salmon);
+}
+
+.menubutton.active .middle {
+    opacity: 0;
+    background: var(--salmon);
+}
+
+.menubutton.active .bottom {
+    -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: var(--salmon);
+}
+
+.menubutton span {
+
+    background: var(--salmon);
+    border: none;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.menubutton span:nth-of-type(2) {
+    top: 11px;
+}
+
+.menubutton span:nth-of-type(3) {
+    top: 22px;
+}
+
+/* -------------- navigavtion------------- 	*/
+nav {
+    background-color: lightblue;
+}
+
+nav .logoNavbar {
+    padding: 0;
+
+}
+
+nav ul {
+    padding: 0;
+    margin: auto;
+    list-style-type: none;
+    max-width: 1300px;
+    white-space: nowrap;
+}
+
+nav a,
+nav a:visited {
+    display: block;
+    color: #E0FFFA;
+    line-height: 56px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    font-size: 1.3rem;
+    padding: 0 20px;
+}
+
+nav a:hover,
+nav a.selected {
+    color: var(--salmon);
+}
+
+nav a:not(.selected):hover:after {
+    color: navy;
+    position: absolute;
+    right: 20px;
+    font-family: 'Open Sans';
+    content: "\f0da";
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+#mainnav {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+#mainnav.active {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+
+
+img.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.pager {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.pager a {
+    display: inline-block;
+    border: 1px solid #4C6A92;
+    padding: 5px 10px;
+    margin: 0 2px;
+}
+
+.pager a.selected {
+    color: var(--salmon);
+    background: navy;
+}
+
+
+/* -----------media queries --------------------------- */
+@media screen and (min-width: 640px) {
     .menubutton {
-        position: fixed;
-        top: 20px;
-        right: 25px;
-        height: 27px;
-        width: 35px;
-        width: 30px;
-        cursor: pointer;
-        z-index: 100;
-        -webkit-transition: opacity .25s ease;
-        transition: opacity .25s ease;
+        display: none;
     }
 
-    .menubutton:hover {
-        opacity: .7;
-    }
-
-    .menubutton.active .top {
-        -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
-        transform: translateY(11px) translateX(0) rotate(45deg);
-        background: var(--salmon);
-    }
-
-    .menubutton.active .middle {
-        opacity: 0;
-        background: var(--salmon);
-    }
-
-    .menubutton.active .bottom {
-        -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
-        transform: translateY(-11px) translateX(0) rotate(-45deg);
-        background: var(--salmon);
-    }
-
-    .menubutton span {
-
-        background: var(--salmon);
-        border: none;
-        height: 3px;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        -webkit-transition: all .35s ease;
-        transition: all .35s ease;
-        cursor: pointer;
-    }
-
-    .menubutton span:nth-of-type(2) {
-        top: 11px;
-    }
-
-    .menubutton span:nth-of-type(3) {
-        top: 22px;
-    }
-
-    /* -------------- navigavtion------------- 	*/
-    nav {
-        background-color: lightblue;
-    }
-
-    nav .logoNavbar {
-        padding: 0;
-
-    }
-
-    nav ul {
-        padding: 0;
-        margin: auto;
-        list-style-type: none;
-        max-width: 1300px;
-        white-space: nowrap;
-    }
-
-    nav a,
-    nav a:visited {
+    nav ul:after {
+        height: 0;
+        content: " ";
         display: block;
-        color: #E0FFFA;
-        line-height: 56px;
-        text-transform: uppercase;
-        border-bottom: 1px solid #fff;
-        font-size: 1.3rem;
-        padding: 0 20px;
+        clear: left;
     }
 
-    nav a:hover,
-    nav a.selected {
-        color: var(--salmon);
+    nav li {
+        width: calc(100% / 7);
+        float: left;
+        text-align: center;
+        margin: auto;
+    }
+
+    nav a {
+        border-bottom: none;
     }
 
     nav a:not(.selected):hover:after {
-        color: navy;
-        position: absolute;
-        right: 20px;
-        font-family: 'Open Sans';
-        content: "\f0da";
-        font-weight: 900;
-        font-size: 2rem;
+        content: " ";
     }
 
     #mainnav {
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-    }
-
-    #mainnav.active {
         visibility: visible;
         opacity: 1;
         height: auto;
     }
 
-
-    img.responsive {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .pager {
-        text-align: right;
-        margin: 20px 0;
-    }
-
-    .pager a {
-        display: inline-block;
-        border: 1px solid #4C6A92;
-        padding: 5px 10px;
-        margin: 0 2px;
-    }
-
-    .pager a.selected {
-        color: var(--salmon);
-        background: navy;
-    }
-
-
-    /* -----------media queries --------------------------- */
-    @media screen and (min-width: 640px) {
-        .menubutton {
-            display: none;
-        }
-
-        nav ul:after {
-            height: 0;
-            content: " ";
-            display: block;
-            clear: left;
-        }
-
-        nav li {
-            width: calc(100% / 7);
-            float: left;
-            text-align: center;
-            margin: auto;
-        }
-
-        nav a {
-            border-bottom: none;
-        }
-
-        nav a:not(.selected):hover:after {
-            content: " ";
-        }
-
-        #mainnav {
-            visibility: visible;
-            opacity: 1;
-            height: auto;
-        }
-
-    }
+}

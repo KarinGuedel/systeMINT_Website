@@ -1,11 +1,40 @@
 
 .container {
     padding: 0px;
-    margin:0 auto;
-    width:80%;
-    max-width:1280px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1280px;
 }
-.sy-row,
-.sy-row .col{
-    box-sizing: border-box;
+
+/*Grid-Layout Elements; 12-column flexible grid that has 12 1fr-unit column tracks,
+they all have a start line named col-start.*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
 }
+
+/*We start mobile first, and all we want for the narrowest screens
+is for the items to remain in source order, and all span right across the grid.
+ */
+
+.wrapper > * {
+    grid-column: col-start / span 12;
+}
+
+/*with screens wider than 700 we want the content1-3 to change there position*/
+@media (min-width: 700px) {
+    .content1 {
+        grid-column: col-start 1 / span 10;
+    }
+
+    .content2 {
+        grid-column: col-start 4 / span 12;
+    }
+
+    .content3 {
+        grid-column: col-start 1 / span 10;
+    }
+}
+
