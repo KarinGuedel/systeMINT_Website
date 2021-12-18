@@ -7,7 +7,7 @@
 }
 
 /*Grid-Layout Elements; 12-column flexible grid that has 12 1fr-unit column tracks,
-they all have a start line named col-start.*/
+they all have a start line named col-start; see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout.*/
 
 .wrapper {
     display: grid;
@@ -23,7 +23,7 @@ is for the items to remain in source order, and all span right across the grid.
     grid-column: col-start / span 12;
 }
 
-/*with screens wider than 700 we want the content1-3 to change there position*/
+/*with screens wider than 700 the content1-3 change their position*/
 @media (min-width: 700px) {
     .content1 {
         grid-column: col-start 1 / span 10;

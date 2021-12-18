@@ -26,26 +26,29 @@ body {
     color: var(--light-blue);
 }
 
-@media only screen and (max-width: 500px) {
-    body {
-        font-size: 1.1rem;
-    }
-}
 
+/*Unsere Titel*/
 h1 {
     font-family: 'Luckiest Guy', cursive;
     font-weight: 500;
-    font-size: 5rem;
+    font-size: 8rem;
     color: #E0FFFA;
     margin: 0;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     h1 {
-        font-size: 3.4rem;
+        font-size: 5rem;
     }
 }
 
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+/*kleiner Titel über h1*/
 h2 {
     font-weight: 200;
     font-size: 1.2rem;
@@ -56,12 +59,7 @@ h2 {
     margin-bottom: 20pt;
 }
 
-@media only screen and (max-width: 500px) {
-    h2 {
-        font-size: 1.1rem;
-    }
-}
-
+/*Titel über Content-Elementen*/
 h3 {
     font-weight: 400;
     font-size: 2rem;
@@ -72,22 +70,11 @@ h3 {
     margin-bottom: 20pt;
 }
 
-@media only screen and (max-width: 500px) {
-    h3 {
-        font-size: 1.5rem;
-        margin-top: 50pt;
-    }
-}
 
 p {
     line-height: 2rem;
 }
 
-@media only screen and (max-width: 500px) {
-    p {
-        line-height: 1.7rem;
-    }
-}
 
 /*Navbar*/
 
