@@ -1,6 +1,6 @@
 /*Unsere Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
+@import url("gridSM.css");
 
 /* ===========================================================
 	TEAM systeMINT | HTML5 & CSS Project | 2021
@@ -15,10 +15,118 @@
     --salmon: #F4827B;
 }
 
+body {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    background: var(--background-blue);
+    color: var(--light-blue);
+}
+
+
+/*Unsere Titel*/
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 500;
+    font-size: 8rem;
+    color: #E0FFFA;
+    margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+/*kleiner Titel über h1*/
+h2 {
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: #E0FFFA;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 20pt;
+}
+
+/*Titel über Content-Elementen*/
+h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #E0FFFA;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 80pt;
+    margin-bottom: 20pt;
+}
+
+
+p {
+    line-height: 2rem;
+}
+
+
+/*Navbar*/
+
+
+/*Header*/
+header {
+    margin-bottom: 100px;
+}
+
+/*Title*/
+.title {
+    margin: auto;
+}
+
+/*Intro*/
+.intro {
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+/*Content*/
+
+.content1 {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.content2 {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.content3 {
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+
+.content-no-button {
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+/*Footer*/
+footer {
+    margin: auto;
+}
+
 /*Buttons*/
 button {
     min-width: 120px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 30px;
     background-color: var(--salmon);
     color: #E0FFFA;
@@ -28,89 +136,8 @@ button {
     padding: 10px;
 }
 
-body {
-    font-size: 1.2rem;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: var(--background-blue);
-    color: var(--light-blue);
-}
-
-h1 {
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: 500;
-    font-size: 5rem;
-    color: #E0FFFA;
-    margin: 0;
-}
-
-h2 {
-    font-weight: 300;
-    font-size: 2rem;
-    color: #E0FFFA;
-    text-transform: uppercase;
-    margin: 0;
-    margin-top: auto;
-}
-
-p {
-    line-height: 2rem;
-}
-
-
-/*Navbar*/
-
-/*Header*/
-header {
-    margin-bottom: 50px;
-}
-/*Title*/
-.title {
-    max-width: 1300px;
-    margin: auto;
-}
-
-/*Intro*/
-.intro {
-    max-width: 1300px;
-    margin: auto;
-    text-align: justify;
-    margin-bottom: 150px;
-}
-
-/*Content*/
-.content {
-    max-width: 1300px;
-    margin: auto;
-    text-align: justify;
-    margin-bottom: 50px;
-}
-
-.last-content {
-    max-width: 1300px;
-    margin: auto;
-    text-align: justify;
-    margin-bottom: 150px;
-}
-
-.content-no-button {
-    max-width: 1300px;
-    margin: auto;
-    text-align: justify;
-    margin-bottom: 150px;
-}
-
-/*Footer*/
-footer {
-    max-width: 1300px;
-    margin: auto;
-}
 /*Abschnitt 1 - xy*/
-
-
 /* ------- todo alles noch anpassen --- */
-
 header,
 footer,
 .iconbox {
@@ -213,7 +240,7 @@ nav {
 
 nav .logoNavbar {
     padding: 0;
-    
+
 }
 
 nav ul {
@@ -244,7 +271,7 @@ nav a:not(.selected):hover:after {
     color: navy;
     position: absolute;
     right: 20px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Open Sans';
     content: "\f0da";
     font-weight: 900;
     font-size: 2rem;
