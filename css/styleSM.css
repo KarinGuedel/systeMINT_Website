@@ -10,7 +10,7 @@
 :root {
     --background-blue: #081025;
     --green: #3BC90E;
-    --light-green: #3BC90E21;
+    --light-green: #6bc74e;
     --light-blue: #E0FFFA;
     --salmon: #F4827B;
 }
@@ -26,14 +26,21 @@ body {
     color: var(--light-blue);
 }
 
+header {
+    margin-bottom: 100px;
+}
+
+footer {
+    margin: auto;
+}
 
 /*Unsere Titel*/
 h1 {
     font-family: 'Luckiest Guy', cursive;
     font-weight: 500;
     font-size: 8rem;
-    color: #E0FFFA;
     margin: 0;
+    color: #E0FFFA;
 }
 
 @media only screen and (max-width: 700px) {
@@ -44,146 +51,172 @@ h1 {
 
 @media only screen and (max-width: 500px) {
     h1 {
-        font-size: 4rem;
+        font-size: 2.3rem;
     }
 }
 
-/*kleiner Titel über h1*/
-h2 {
-    font-weight: 200;
-    font-size: 1.2rem;
+h2, h3 {
     color: #E0FFFA;
     text-transform: uppercase;
-    margin: 0;
-    margin-top: auto;
-    margin-bottom: 20pt;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin: auto 0 20px 0;
 }
 
 /*Titel über Content-Elementen*/
 h3 {
     font-weight: 400;
     font-size: 2rem;
-    color: #E0FFFA;
-    text-transform: uppercase;
-    margin: 0;
-    margin-top: 80pt;
-    margin-bottom: 20pt;
+    margin: 80px 0 20px 0;
 }
 
+@media only screen and (max-width: 700px) {
+    h2, h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h2, h3 {
+        font-size: 1.2rem;
+    }
+}
 
 p {
     line-height: 2rem;
 }
 
-
-/*Navbar*/
-
-
-/*Header*/
-header {
-    margin-bottom: 100px;
+@media only screen and (max-width: 700px) {
+    p {
+        line-height: 1.7rem;
+    }
 }
 
-/*Title*/
+@media only screen and (max-width: 500px) {
+    p {
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+a, a:visited {
+    color: var(--green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--salmon);
+}
+
 .title {
     margin: auto;
 }
 
-/*Intro*/
 .intro {
-    margin: auto;
-    margin-bottom: 150px;
+    margin: auto 0 150px 0;
 }
 
-/*Content*/
-
-.content1 {
-    margin: auto;
-    margin-bottom: 50px;
+/* ------------------- Contents --------------------------- */
+.content1, .content2 {
+    margin: auto 0 50px 0;
 }
 
-.content2 {
-    margin: auto;
-    margin-bottom: 50px;
+.content3, .content-no-button {
+    margin: auto 0 150px 0;
 }
 
-.content3 {
-    margin: auto;
-    margin-bottom: 150px;
+/*todo only temporär zum unterscheiden*/
+.lehrpersonen {
+    background-color: purple;
 }
 
-
-.content-no-button {
-    margin: auto;
-    margin-bottom: 150px;
+.spiel {
+    background-color: #fa9ae6;
 }
 
-/*Footer*/
-footer {
-    margin: auto;
+.team {
+    background-color: #ff0c52;
 }
 
-/*Buttons*/
+.kontakt {
+    background-color: #e9630b;
+}
+
+.footer {
+    background-color: #87690f;
+}
+
+/* ------------------- Buttons --------------------------- */
 button {
-    min-width: 120px;
-    margin-left: 0;
-    margin-right: 30px;
-    background-color: var(--salmon);
+    height: 3rem;
+    min-width: 150px;
     color: #E0FFFA;
     font-size: 1em;
     border-radius: 11px;
     border: none;
     padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+    font-weight: 100;
 }
 
-/*Abschnitt 1 - xy*/
-/* ------- todo alles noch anpassen --- */
-header,
-footer,
-.iconbox {
-    background-color: var(--background-blue);
-    color: white;
+.play-btn, .contact-btn {
+    height: 4rem;
+    min-width: 230px;
+    font-size: 1.6em;
+    border-radius: 29px;
 }
 
-.iconbox:hover {
-    background-color: navy;
-    border-radius: 20px;
+.play-btn {
+    background-color: var(--green);
+    margin: 5px 45px 5px 0;
 }
 
-header a, header a:visited,
-footer a, footer a:visited,
-.iconbox a, .iconbox a:visited {
-    color: lightskyblue;
+.contact-btn {
+    background-color: var(--light-blue);
+    color: var(--green);
+    margin: 5px 0 0 0;
 }
 
-a, a:visited {
-    color: steelblue;
-    text-decoration: none;
+.more-btn {
+    background-color: var(--salmon);
+    margin: 5px 0 5px 0;
+
 }
 
-a:hover {
-    color: red;
+.play-btn:hover, .contact-btn:hover {
+    background-color: var(--salmon);
+    color: var(--light-blue)
+
 }
 
-
-.center {
-    text-align: center;
+.more-btn:hover {
+    opacity: .9;
+    background-color: var(--green);
 }
 
-a.social, a.social:visited {
-    color: gainsboro;
-    padding-right: 10px;
+@media only screen and (max-width: 500px) {
+    .contact-btn, .play-btn {
+        height: 3rem;
+        min-width: 130px;
+        font-size: 1em;
+        border-radius: 29px;
+        margin-right: 5px;
+    }
 }
 
-
-/* -----------menu button --------------------------- */
+/* -----------menu button  aka. Hamburger --------------------------- */
 .menubutton {
     position: fixed;
     top: 20px;
     right: 25px;
     height: 27px;
     width: 35px;
-    width: 30px;
     cursor: pointer;
     z-index: 100;
     -webkit-transition: opacity .25s ease;
@@ -212,7 +245,6 @@ a.social, a.social:visited {
 }
 
 .menubutton span {
-
     background: var(--salmon);
     border: none;
     height: 3px;
@@ -233,14 +265,14 @@ a.social, a.social:visited {
     top: 22px;
 }
 
-/* -------------- navigavtion------------- 	*/
+/* ------------------- Navbar aka Header todo --------------------------- */
+
 nav {
     background-color: lightblue;
 }
 
 nav .logoNavbar {
     padding: 0;
-
 }
 
 nav ul {
@@ -295,25 +327,7 @@ img.responsive {
     height: auto;
 }
 
-.pager {
-    text-align: right;
-    margin: 20px 0;
-}
-
-.pager a {
-    display: inline-block;
-    border: 1px solid #4C6A92;
-    padding: 5px 10px;
-    margin: 0 2px;
-}
-
-.pager a.selected {
-    color: var(--salmon);
-    background: navy;
-}
-
-
-/* -----------media queries --------------------------- */
+/* ----------- media queries --------------------------- */
 @media screen and (min-width: 640px) {
     .menubutton {
         display: none;
