@@ -268,7 +268,7 @@ button {
 /* ------------------- Navbar aka Header todo --------------------------- */
 
 nav {
-    background-color: lightblue;
+    background-color: #2CA2D8;
 }
 
 nav .logoNavbar {
@@ -343,7 +343,7 @@ img.responsive {
     nav li {
         width: calc(100% / 7);
         float: left;
-        text-align: center;
+        text-align: right;
         margin: auto;
     }
 
