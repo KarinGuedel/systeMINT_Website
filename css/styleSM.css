@@ -24,7 +24,6 @@ body {
     padding: 0;
     background: var(--background-blue);
     color: var(--light-blue);
-    text-align: justify;
 }
 
 header {
@@ -103,18 +102,17 @@ p {
     overflow-wrap: break-word;
 }
 
-@media only screen and (max-width: 700px) {
+/*@media only screen and (max-width: 700px) {
     p {
-        line-height: 1.7rem;
+        
     }
 }
 
 @media only screen and (max-width: 500px) {
     p {
-        line-height: 1.5rem;
-        font-size: 1.1rem;
+        
     }
-}
+}*/
 
 a, a:visited {
     color: var(--green);
@@ -344,6 +342,8 @@ img.responsive {
     height: auto;
 }
 
+
+
 /* ----------- media queries --------------------------- */
 @media screen and (min-width: 700px) {
     .menubutton {
@@ -380,30 +380,22 @@ img.responsive {
 
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) and (min-width: 700px) {
     #home {
-        position: absolute;
-        left: -999px;
+        display: none;
     }
 
     nav li {
         width: calc(100% / 6);
-        float: left;
-        text-align: center;
-        margin: auto;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 700px) {
     #contact {
-        position: absolute;
-        left: -999px;
+        display: none;
     }
 
     nav li {
         width: calc(100% / 5);
-        float: left;
-        text-align: center;
-        margin: auto;
     }
 }
