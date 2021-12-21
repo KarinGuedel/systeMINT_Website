@@ -1,0 +1,367 @@
+/*Unsere Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url("gridSM.css");
+
+/* ===========================================================
+	TEAM systeMINT | HTML5 & CSS Project | 2021
+   ===========================================================	*/
+
+/*Unsere Farben*/
+:root {
+    --background-blue: #081025;
+    --background-light-blue: #5a81f4;
+    --green: #3BC90E;
+    --light-green: #6bc74e;
+    --light-blue: #E0FFFA;
+    --salmon: #F4827B;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    /*background: var(--background-blue);*/
+    background: linear-gradient( #081025, #177bb1, #3777c7, #3f7cc6, #154f96, #194377, #194377, #081025, #194377);
+
+    color: var(--light-blue);
+}
+
+header {
+    margin-bottom: 100px;
+}
+
+footer {
+    margin: auto;
+}
+
+/*Unsere Titel*/
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 500;
+    font-size: 8rem;
+    margin: 0;
+    color: #E0FFFA;
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+}
+
+h2, h3 {
+    color: #E0FFFA;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin: auto 0 20px 0;
+}
+
+/*Titel über Content-Elementen*/
+h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 80px 0 20px 0;
+}
+
+@media only screen and (max-width: 700px) {
+    h2, h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h2, h3 {
+        font-size: 1.2rem;
+    }
+}
+
+p {
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    p {
+        line-height: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    p {
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+a, a:visited {
+    color: var(--green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--salmon);
+}
+
+.title {
+    margin: auto;
+}
+
+.intro {
+    margin: auto 0 150px 0;
+}
+
+/* ------------------- Contents --------------------------- */
+.content1, .content2 {
+    margin: auto 0 50px 0;
+}
+
+.content3, .content-no-button {
+    margin: auto 0 150px 0;
+}
+
+/*todo only temporär zum unterscheiden*/
+.lehrpersonen {
+    background-color: purple;
+}
+
+.spiel {
+    background-color: #fa9ae6;
+}
+
+.team {
+    background-color: #ff0c52;
+}
+
+.kontakt {
+    background-color: #e9630b;
+}
+
+.footer {
+    background-color: #87690f;
+}
+
+/* ------------------- Buttons --------------------------- */
+button {
+    height: 3rem;
+    min-width: 150px;
+    color: #E0FFFA;
+    font-size: 1em;
+    border-radius: 11px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+    font-weight: 100;
+}
+
+.play-btn, .contact-btn {
+    height: 4rem;
+    min-width: 230px;
+    font-size: 1.6em;
+    border-radius: 29px;
+}
+
+.play-btn {
+    background-color: var(--green);
+    margin: 5px 45px 5px 0;
+}
+
+.contact-btn {
+    background-color: var(--light-blue);
+    color: var(--green);
+    margin: 5px 0 0 0;
+}
+
+.more-btn {
+    background-color: var(--salmon);
+    margin: 5px 0 5px 0;
+
+}
+
+.play-btn:hover, .contact-btn:hover {
+    background-color: var(--salmon);
+    color: var(--light-blue)
+
+}
+
+.more-btn:hover {
+    opacity: .9;
+    background-color: var(--green);
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-btn, .play-btn {
+        height: 3rem;
+        min-width: 130px;
+        font-size: 1em;
+        border-radius: 29px;
+        margin-right: 5px;
+    }
+}
+
+/* -----------menu button  aka. Hamburger --------------------------- */
+.menubutton {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+}
+
+.menubutton:hover {
+    opacity: .7;
+}
+
+.menubutton.active .top {
+    -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: var(--salmon);
+}
+
+.menubutton.active .middle {
+    opacity: 0;
+    background: var(--salmon);
+}
+
+.menubutton.active .bottom {
+    -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: var(--salmon);
+}
+
+.menubutton span {
+    background: var(--salmon);
+    border: none;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.menubutton span:nth-of-type(2) {
+    top: 11px;
+}
+
+.menubutton span:nth-of-type(3) {
+    top: 22px;
+}
+
+/* ------------------- Navbar aka Header todo --------------------------- */
+
+nav {
+    background-color: lightblue;
+}
+
+nav .logoNavbar {
+    padding: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: auto;
+    list-style-type: none;
+    max-width: 1300px;
+    white-space: nowrap;
+}
+
+nav a,
+nav a:visited {
+    display: block;
+    color: #E0FFFA;
+    line-height: 56px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    font-size: 1.3rem;
+    padding: 0 20px;
+}
+
+nav a:hover,
+nav a.selected {
+    color: var(--salmon);
+}
+
+nav a:not(.selected):hover:after {
+    color: navy;
+    position: absolute;
+    right: 20px;
+    font-family: 'Open Sans';
+    content: "\f0da";
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+#mainnav {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+#mainnav.active {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+
+
+img.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------- media queries --------------------------- */
+@media screen and (min-width: 640px) {
+    .menubutton {
+        display: none;
+    }
+
+    nav ul:after {
+        height: 0;
+        content: " ";
+        display: block;
+        clear: left;
+    }
+
+    nav li {
+        width: calc(100% / 7);
+        float: left;
+        text-align: center;
+        margin: auto;
+    }
+
+    nav a {
+        border-bottom: none;
+    }
+
+    nav a:not(.selected):hover:after {
+        content: " ";
+    }
+
+    #mainnav {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+
+}
