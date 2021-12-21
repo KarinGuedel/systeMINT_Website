@@ -9,6 +9,7 @@
 /*Unsere Farben*/
 :root {
     --background-blue: #081025;
+    --background-light-blue: #5a81f4;
     --green: #3BC90E;
     --light-green: #6bc74e;
     --light-blue: #E0FFFA;
@@ -22,7 +23,9 @@ body {
     text-align: left;
     margin: 0;
     padding: 0;
-    background: var(--background-blue);
+    /*background: var(--background-blue);*/
+    background: linear-gradient( #081025, #177bb1, #3777c7, #3f7cc6, #154f96, #194377, #194377, #081025, #194377);
+
     color: var(--light-blue);
 }
 
