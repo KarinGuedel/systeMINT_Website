@@ -15,3 +15,4 @@ window.addEventListener('load', () => {
     console.log('window loaded');
     initToggler('.menubutton', '#mainnav', 'active');
 })
+
