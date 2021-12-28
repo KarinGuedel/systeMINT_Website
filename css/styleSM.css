@@ -277,7 +277,7 @@ nav .logoNavbar {
 
 nav ul {
     padding: 0;
-    margin: 0;
+    margin: auto;
     list-style-type: none;
     max-width: 1300px;
     white-space: nowrap;
@@ -359,6 +359,8 @@ img.responsive {
         visibility: visible;
         opacity: 1;
         height: auto;
+        position: fixed;
+        top: 0;
     }
 
 }
