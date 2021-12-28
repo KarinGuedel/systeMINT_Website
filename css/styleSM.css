@@ -312,6 +312,8 @@ nav a:visited {
     
 }
 
+#x1 a:link { color: green;};
+
 nav a:hover,
 nav a.selected {
     color: var(--salmon);
@@ -331,6 +333,9 @@ nav a:not(.selected):hover:after {
     visibility: hidden;
     opacity: 0;
     height: 0;
+    position: fixed;
+    top: 0;
+    width: 80%;
 }
 
 #mainnav.active {
@@ -364,7 +369,6 @@ img.responsive {
         width: calc(100% / 7);
         float: left;
         text-align: right;
-        margin: auto;
     }
 
     nav a {
@@ -379,7 +383,7 @@ img.responsive {
         visibility: visible;
         opacity: 1;
         height: auto;
-        position: fixed;
+        position: right;
         top: 0;
     }
 
