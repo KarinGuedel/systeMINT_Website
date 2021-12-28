@@ -340,6 +340,11 @@ nav li .big {
     font-size: 1.8rem;
 }
 
+nav li .bigSalmon {
+    font-size: 1.8rem;
+    color: #F4827B;
+}
+
 #mainnav.active {
     visibility: visible;
     opacity: 1;
