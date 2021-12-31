@@ -110,7 +110,6 @@ p {
         
     }
 }
-
 @media only screen and (max-width: 500px) {
     p {
         
@@ -283,7 +282,7 @@ button {
 /* ------------------- Navbar aka Header todo --------------------------- */
 
 nav {
-    background-color: lightblue;
+    background-color: #2CA2D8;
 }
 
 nav .logoNavbar {
@@ -305,10 +304,11 @@ nav a:visited {
     color: #E0FFFA;
     line-height: 56px;
     text-transform: uppercase;
-    border-bottom: 1px solid #fff;
-    font-size: 1.5rem;
+    border-bottom: 0px solid #fff;
+    font-size: 1.2rem;
     padding: 0;
     padding-left: 20px;
+    padding-right: 20px;
     
 }
 
@@ -331,6 +331,19 @@ nav a:not(.selected):hover:after {
     visibility: hidden;
     opacity: 0;
     height: 0;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    max-width: 1280px;
+}
+
+nav li .big {
+    font-size: 1.8rem;
+}
+
+nav li .bigSalmon {
+    font-size: 1.8rem;
+    color: #F4827B;
 }
 
 #mainnav.active {
@@ -361,9 +374,9 @@ img.responsive {
     }
 
     nav li {
-        width: calc(100% / 7);
+        width: calc(100% / 9);
         float: left;
-        text-align: center;
+        text-align: right;
         margin: auto;
     }
 
@@ -379,6 +392,8 @@ img.responsive {
         visibility: visible;
         opacity: 1;
         height: auto;
+        position: right;
+        top: 0;
     }
 
 }
@@ -389,7 +404,7 @@ img.responsive {
     }
 
     nav li {
-        width: calc(100% / 6);
+        width: calc(100% / 8);
     }
 }
 
@@ -399,6 +414,6 @@ img.responsive {
     }
 
     nav li {
-        width: calc(100% / 5);
+        width: calc(100% / 7);
     }
 }
