@@ -417,3 +417,28 @@ img.responsive {
         width: calc(100% / 7);
     }
 }
+
+/* ----------------------- todo images --------------------------- */
+
+.test1 {
+    position: absolute;
+    width: 120%;
+    height: 70%;
+    transform: rotate(3deg);
+    margin-top: 10px;
+    z-index: 200;
+}
+
+.test2 {
+    position: absolute;
+    width: 160%;
+    height: 70%;
+    opacity: 0.5;
+    transform: rotate(20.51deg);
+    margin-top: 10px;
+    z-index: 200;
+}
+
+.lehrpersonen {
+    margin-top: 400px;
+}
