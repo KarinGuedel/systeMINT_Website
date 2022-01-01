@@ -11,7 +11,7 @@
 :root {
     --background-blue: #081025;
     --background-light-blue: #5a81f4;
-    --green: #3BC90E;
+    --green: #7ceaa4;
     --light-green: #6bc74e;
     --light-blue: #E0FFFA;
     --salmon: #F4827B;
@@ -141,26 +141,26 @@ a:hover {
     margin: auto 0 150px 0;
 }
 
-/*todo only temporär zum unterscheiden*/
-.lehrpersonen {
-    background-color: purple;
-}
+/*!*todo only temporär zum unterscheiden*!*/
+/*.lehrpersonen {*/
+/*    background-color: purple;*/
+/*}*/
 
-.spiel {
-    background-color: #fa9ae6;
-}
+/*.spiel {*/
+/*    background-color: #fa9ae6;*/
+/*}*/
 
-.team {
-    background-color: #ff0c52;
-}
+/*.team {*/
+/*    background-color: #ff0c52;*/
+/*}*/
 
-.kontakt {
-    background-color: #e9630b;
-}
+/*.kontakt {*/
+/*    background-color: #e9630b;*/
+/*}*/
 
-.footer {
-    background-color: #87690f;
-}
+/*.footer {*/
+/*    background-color: #87690f;*/
+/*}*/
 
 /* ------------------- Buttons --------------------------- */
 button {
@@ -168,7 +168,7 @@ button {
     min-width: 150px;
     color: #E0FFFA;
     font-size: 1em;
-    border-radius: 11px;
+    border-radius: 29px;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -176,6 +176,7 @@ button {
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
     font-weight: 100;
+
 }
 
 .play-btn, .contact-btn {
@@ -183,6 +184,7 @@ button {
     min-width: 230px;
     font-size: 1.6em;
     border-radius: 29px;
+    box-shadow: 2px 5px #306d6d;
 }
 
 .play-btn {
@@ -199,7 +201,7 @@ button {
 .more-btn {
     background-color: var(--salmon);
     margin: 5px 0 5px 0;
-
+    box-shadow: 1px 2px #cf7a94;
 }
 
 .play-btn:hover, .contact-btn:hover {
@@ -234,6 +236,7 @@ button {
     z-index: 100;
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
+    pointer-events: auto;
 }
 
 .menubutton:hover {
@@ -421,24 +424,46 @@ img.responsive {
 .test1 {
     position: absolute;
     width: 120%;
-    height: 70%;
-    transform: rotate(3deg);
+    height: auto;
     margin-top: 10px;
-    z-index: 200;
+    z-index: 1;
+    opacity: 0.5;
+    transform: rotate(7.35deg);
 }
 
 .test2 {
     position: absolute;
-    width: 160%;
-    height: 70%;
+    width: 200%;
+    height: auto;
     opacity: 0.5;
-    transform: rotate(20.51deg);
+    transform: rotate(-40deg);
     margin-top: 10px;
-    z-index: 200;
+    z-index: 1;
 }
 
-.lehrpersonen {
+.test3 {
+    position: absolute;
+    width: auto%;
+    height: 70%;
+    opacity: 0.5;
+    transform: rotate(340deg);
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.test4 {
+    position: absolute;
+    width: 160%;
+    height: auto;
+    opacity: 0.5;
+    transform: rotate(70deg);
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.lehrpersonen,.spiel, .team, .kontakt {
     margin-top: 400px;
+    z-index: 800;
 }
 
 
