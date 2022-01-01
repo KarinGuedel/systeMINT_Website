@@ -24,7 +24,7 @@ body {
     text-align: left;
     margin: 0;
     padding: 0;
-    background: linear-gradient(#081025, #177bb1, #3777c7, #3f7cc6, #154f96, #194377, #194377, #081025, #194377);
+    background: linear-gradient(#081025, #177bb1, #3777c7, #22a8c3, #154f96, #194377, #194377, #081025, #194377);
     color: var(--light-blue);
 }
 
@@ -34,6 +34,8 @@ header {
 
 footer {
     margin: auto;
+    background-color: var(--green);
+    color: var(--background-blue);
 }
 
 /*Unsere Titel*/
@@ -176,6 +178,7 @@ button {
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
     font-weight: 100;
+position: relative;
 
 }
 
@@ -185,6 +188,7 @@ button {
     font-size: 1.6em;
     border-radius: 29px;
     box-shadow: 2px 5px #306d6d;
+
 }
 
 .play-btn {
@@ -196,6 +200,7 @@ button {
     background-color: var(--light-blue);
     color: var(--green);
     margin: 5px 0 0 0;
+
 }
 
 .more-btn {
@@ -393,7 +398,7 @@ img.responsive {
         visibility: visible;
         opacity: 1;
         height: auto;
-        position: right;
+        position: fixed;
         top: 0;
     }
 
@@ -421,17 +426,19 @@ img.responsive {
 
 /* ----------------------- todo images --------------------------- */
 
-.test1 {
+
+
+.imageOne {
     position: absolute;
     width: 120%;
     height: auto;
     margin-top: 10px;
-    z-index: 1;
+    z-index: 2;
     opacity: 0.5;
     transform: rotate(7.35deg);
 }
 
-.test2 {
+.imageTwo {
     position: absolute;
     width: 200%;
     height: auto;
@@ -441,9 +448,9 @@ img.responsive {
     z-index: 1;
 }
 
-.test3 {
+.imageThree {
     position: absolute;
-    width: auto%;
+    width: auto;
     height: 70%;
     opacity: 0.5;
     transform: rotate(340deg);
@@ -451,9 +458,9 @@ img.responsive {
     z-index: 1;
 }
 
-.test4 {
+.imageFour {
     position: absolute;
-    width: 160%;
+    width: 90%;
     height: auto;
     opacity: 0.5;
     transform: rotate(70deg);
@@ -461,9 +468,20 @@ img.responsive {
     z-index: 1;
 }
 
-.lehrpersonen,.spiel, .team, .kontakt, .title {
+.imageFive {
+    position: absolute;
+    width: 160%;
+    height: auto;
+    opacity: 0.9;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.lehrpersonen, .spiel, .team, .kontakt {
     margin-top: 400px;
-    z-index: 800;
+    z-index: 800 !important;
+    position: relative;
+
 }
 
 
