@@ -461,7 +461,7 @@ img.responsive {
     z-index: 1;
 }
 
-.lehrpersonen,.spiel, .team, .kontakt {
+.lehrpersonen,.spiel, .team, .kontakt, .title {
     margin-top: 400px;
     z-index: 800;
 }
