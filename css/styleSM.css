@@ -294,6 +294,7 @@ position: relative;
 
 nav {
     background-color: var(--background-blue);
+    z-index: 999;
 }
 
 nav .logoNavbar {
@@ -318,7 +319,7 @@ nav a:visited {
     text-transform: uppercase;
     border-bottom: 0px solid var(--light-blue);
     font-size: 1.2rem;
-    /*padding: 0 20px 0 20px;*/
+    padding: 0 20px 0 20px;
 }
 
 nav a:hover,
