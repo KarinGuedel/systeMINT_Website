@@ -35,7 +35,7 @@ header {
 
 footer {
     margin: auto;
-    background-color: var(--green);
+    background-color: var(--background-blue);
     color: var(--background-blue);
 }
 
@@ -293,7 +293,7 @@ position: relative;
 /* ------------------- Navbar aka Header todo --------------------------- */
 
 nav {
-    background-color: #2CA2D8;
+    background-color: var(--background-blue);
 }
 
 nav .logoNavbar {
@@ -313,10 +313,10 @@ nav ul {
 nav a,
 nav a:visited {
     display: block;
-    color: #E0FFFA;
+    color: var(--light-blue);
     line-height: 56px;
     text-transform: uppercase;
-    border-bottom: 0px solid #fff;
+    border-bottom: 0px solid var(--light-blue);
     font-size: 1.2rem;
     /*padding: 0 20px 0 20px;*/
 }
@@ -327,7 +327,7 @@ nav a.selected {
 }
 
 nav a:not(.selected):hover:after {
-    color: navy;
+    color: var(--green);
     position: absolute;
     right: 20px;
     font-family: 'Open Sans';
