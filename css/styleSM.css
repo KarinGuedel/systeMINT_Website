@@ -373,7 +373,7 @@ img.responsive {
 
 
 /* ----------- media queries --------------------------- */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
     .menubutton {
         display: none;
     }
@@ -414,7 +414,7 @@ img.responsive {
 
 }
 
-@media screen and (max-width: 1300px) and (min-width: 700px) {
+/*@media screen and (max-width: 1300px) and (min-width: 700px) {
     #home {
         display: none;
     }
@@ -436,4 +436,4 @@ img.responsive {
     nav li {
         width: calc(100% / 7);
     }
-}
+}*/
