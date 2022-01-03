@@ -1,6 +1,7 @@
 /*Unsere Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url("gridSM.css");
+@import url("otslider.css");
 @import url("atoms.css");
 
 /* ===========================================================
@@ -143,26 +144,31 @@ a:hover {
     margin: auto 0 150px 0;
 }
 
-/*!*todo only temporär zum unterscheiden*!*/
-/*.lehrpersonen {*/
-/*    background-color: purple;*/
-/*}*/
+/*todo only temporär zum unterscheiden*/
+.lehrpersonen {
+    background-color: purple;
+}
 
-/*.spiel {*/
-/*    background-color: #fa9ae6;*/
-/*}*/
+.spiel {
+    background-color: #fa9ae6;
+}
 
-/*.team {*/
-/*    background-color: #ff0c52;*/
-/*}*/
+.team {
+    background-color: #ff0c52;
+}
 
-/*.kontakt {*/
-/*    background-color: #e9630b;*/
-/*}*/
+.kontakt {
+    background-color: #e9630b;
+}
 
-/*.footer {*/
-/*    background-color: #87690f;*/
-/*}*/
+.footer {
+    background-color: #87690f;
+}
+
+#homelink, #spiel, #schule, #team {
+    scroll-margin-top: 100px;
+}
+
 
 /* ------------------- Buttons --------------------------- */
 button {
@@ -188,7 +194,6 @@ position: relative;
     font-size: 1.6em;
     border-radius: 29px;
     box-shadow: 2px 5px #306d6d;
-
 }
 
 .play-btn {
@@ -200,7 +205,6 @@ position: relative;
     background-color: var(--light-blue);
     color: var(--green);
     margin: 5px 0 0 0;
-
 }
 
 .more-btn {
@@ -298,9 +302,10 @@ nav .logoNavbar {
 
 nav ul {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     list-style: none;
-    max-width: 1300px;
+    width: 80%;
+    max-width: 1280px;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -313,10 +318,7 @@ nav a:visited {
     text-transform: uppercase;
     border-bottom: 0px solid #fff;
     font-size: 1.2rem;
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-
+    /*padding: 0 20px 0 20px;*/
 }
 
 nav a:hover,
@@ -340,8 +342,7 @@ nav a:not(.selected):hover:after {
     height: 0;
     position: fixed;
     top: 0;
-    width: 80%;
-    max-width: 1280px;
+    width: 100%;
 }
 
 nav li .big {
@@ -367,7 +368,7 @@ img.responsive {
 
 
 /* ----------- media queries --------------------------- */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
     .menubutton {
         display: none;
     }
@@ -382,8 +383,8 @@ img.responsive {
     nav li {
         width: calc(100% / 9);
         float: left;
-        text-align: right;
         margin: auto;
+        text-align: center;
     }
 
     nav a {
@@ -402,9 +403,13 @@ img.responsive {
         top: 0;
     }
 
+    nav #contact{
+        text-align: right;
+    }
+
 }
 
-@media screen and (max-width: 1300px) and (min-width: 700px) {
+/*@media screen and (max-width: 1300px) and (min-width: 700px) {
     #home {
         display: none;
     }
@@ -414,9 +419,13 @@ img.responsive {
     }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 700px) {
+@media screen and (max-width: 1100px) and (min-width: 700px) {
     #contact {
         display: none;
+    }
+
+    #teamnav {
+        text-align: right;
     }
 
     nav li {
@@ -424,7 +433,7 @@ img.responsive {
     }
 }
 
-/* ----------------------- todo images --------------------------- */
+ ----------------------- todo images --------------------------- */
 
 
 

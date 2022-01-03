@@ -3,11 +3,13 @@
 
 <!--HEAD-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SysteMINT | game </title>
-  <link href="css/styleSM.css" type="text/css" rel="stylesheet" media="all"/>
-  <script type="text/javascript" src="js/main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysteMINT | game </title>
+    <link href="css/styleSM.css" type="text/css" rel="stylesheet" media="all"/>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/otslider.css"/>
+    <script src="js/otslider.js"></script>
 </head>
 
 <!--BODY-->
@@ -15,7 +17,7 @@
 
 <!--logo + navbar-->
 <header>
-  <div class="container">
+  <!--<div class="container">-->
     <!--    hamburger-->
     <div class="menubutton">
       <span class="top"></span>
@@ -23,21 +25,21 @@
       <span class="bottom"></span>
     </div>
     <nav id="mainnav">
-      <ul>
-        <li><h1><a href="index.html"><span class="big">Syste</span><span class="bigSalmon">mint</span><span class="big"> game</span></a>
-        </h1></li>
-        <!--leerraum-->
-        <li><p></p></li>
-        <li><p></p></li>
-        <li><p></p></li>
-        <li><a id="home" href="#homelink">Home</a></li>
-        <li><a href="#spiel">Spiel</a></li>
-        <li><a href="#schule">Schule</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a id="contact" href="#kontakt">Kontakt</a></li>
-      </ul>
+        <ul>
+          <li><h1><a href="index.html"><span class="big">Syste</span><span class="bigSalmon">mint</span><span class="big"> game</span></a></h1></li>
+          <!--leerraum-->
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><a id="home" href="#homelink">Home</a></li>
+          <li><a href="#spiel">Spiel</a></li>
+          <li><a href="#schule">Schule</a></li>
+          <li><a id="teamnav" href="#team">Team</a></li>
+          <li><a id="contact" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
     </nav>
-  </div>
+  <!--</div>-->
 </header>
 
 <!--            INTRO & TITLE       -->
@@ -54,9 +56,7 @@
     <button type="button" class="play-btn">Spielen</button>
     <button type="button" class="contact-btn">Melde Dich</button>
   </div>
-
 </div>
-
 
 <!--                 #### TITLE 1 - für Lehrpersonen ####          -->
 <div class="container lehrpersonen">
@@ -77,7 +77,7 @@
       <p>Das Spiel ist für Oberstufenschulklassen konzipiert und zwar für alle Niveaus.
         Die Lehrperson muss mit dem Thema nicht vertraut sein. In den Fächern “Natur
         und Technik” und “Räume, Zeiten, Gesellschaften” gibt es Lehrplanbezüge.</p>
-      <button type="button" class="more-btn">Mehr...</button>
+      <button type="button" onclick="location.href='zielgruppe.html'" class="more-btn">Mehr...</button>
     </div>
   </div>
   <!--  CONTENT 2- Ziele   -->
@@ -108,12 +108,12 @@
 
 <!--  CONTENT  - Das Spiel  -->
 <div class="container spiel">
-  <div class="title">
-    <div class="container">
-      <h2 id="spiel">Dem Wasser auf der Spur</h2>
-      <h1>Das Spiel</h1>
+    <div class="title">
+        <div class="container">
+            <h2 id="spiel">Dem Wasser auf der Spur</h2>
+            <h1>Das Spiel</h1>
+        </div>
     </div>
-  </div>
 
   <div class="wrapper">
     <div class="content1">
@@ -151,13 +151,31 @@
 </div>
 
 <!--                 #### TITLE 3 - das Team ####          -->
+<!--      Initialize image Carousel     -->
+<script>
+    var otslider = new OTSlider();
+    otslider.init({
+        // or 'fade'
+        transition: 'slide',
+        // easing function
+        transitionTiming: "ease",
+        // duration in ms
+        transitionDuration: 500
+    });
+</script>
 <div class="container team">
-  <div class="title">
-    <div class="container">
-      <h2 id="team">Schule und Gamedesign</h2>
-      <h1>Das Team</h1>
+    <div class="title">
+        <div class="container">
+            <h2 id="team">Schule und Gamedesign</h2>
+            <h1>Das Team</h1>
+        </div>
+        <div class="ot-slider">
+            <img src="images/team/platzhalter2.jpeg" alt="platzhalter2"/>
+            <img src="images/team/platzhalter1.jpeg" alt="platzhalter1"/>
+            <img src="images/team/platzhalter2.jpeg" alt="platzhalter2"/>
+            <img src="images/team/platzhalter1.jpeg" alt="platzhalter1"/>
+        </div>
     </div>
-  </div>
 
   <div class="content-no-button">
     <div class="container">
@@ -183,39 +201,34 @@
 <div class="container kontakt">
   <div class="title">
     <div class="container">
-      <h2 id="kontakt">FHNW & Education21</h2>
+      <h2 id="kontakt">FHNW & Éducation21</h2>
       <h1>Kontakt</h1>
+      <br />
+      <br />
     </div>
-  </div>
 
   <div class="content-no-button">
-    <p>Projektteam FHNW
-      Madlaina Kalunder & Karin Güdel
-
-      éducation21
-      Angela Thomasius
-
-      PgB Netzwerkwerk MINT-Bildung
-      Sara Venzin</p>
+    <div class="container">
+      <h2>Projektteam FHNW</h2>
+      <p>Madlaina Kalunder & Karin Güdel</p>
+      <br />
+      <br />
+      <h2>éducation21</h2>
+      <p>Angela Thomasius</p>
+      <br />
+      <br />
+      <h2>PgB Netzwerkwerk MINT-Bildung</h2>
+      <p>Sara Venzin</p>
+    </div>
   </div>
 </div>
-
+</div>
 
 <!--start Footer-->
 <footer>
   <div class="container footer">
-    <h3>Contact</h3>
-    <p>Company Name<br> Street 99<br> MM-9999 Moon<br> Fon +99 88 767 55 44<br> E-Mail <a href="mailto:no@spam.haha">company@haha.com</a>
-    </p>
-
-    <h4>join the network</h4>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-      et
-      dolore magna aliquyam erat, sed diam voluptua.</p>
-    <p><a href="#" class="social"><i class="fab fa-facebook-square fa-3x"></i></a> <a href="#" class="social"><i
-        class="fab fa-youtube-square fa-3x"></i></a> <a href="#" class="social"><i
-        class="fab fa-instagram-square fa-3x"></i></a>
-    </p>
+    <p>PH FHNW<br> Hofackerstrasse 30<br> 4032 Muttenz<br>
+      <a href="mailto:info@systemint.ch">info@systemint.ch</a><br> IMPRESSUM</p>
   </div>
 </footer>
 <!--end Footer-->
@@ -267,5 +280,6 @@
         stroke-width="4" fill="none"/>
   </svg>
 </div>
+
 </body>
 </html>
