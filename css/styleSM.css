@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url("gridSM.css");
 @import url("otslider.css");
+@import url("atoms.css");
 
 /* ===========================================================
 	TEAM systeMINT | HTML5 & CSS Project | 2021
@@ -11,7 +12,7 @@
 :root {
     --background-blue: #081025;
     --background-light-blue: #5a81f4;
-    --green: #3BC90E;
+    --green: #7ceaa4;
     --light-green: #6bc74e;
     --light-blue: #E0FFFA;
     --salmon: #F4827B;
@@ -24,9 +25,7 @@ body {
     text-align: left;
     margin: 0;
     padding: 0;
-    /*background: var(--background-blue);*/
-    background: linear-gradient( #081025, #177bb1, #3777c7, #3f7cc6, #154f96, #194377, #194377, #081025, #194377);
-
+    background: linear-gradient(#081025, #177bb1, #3777c7, #22a8c3, #154f96, #194377, #194377, #081025, #194377);
     color: var(--light-blue);
 }
 
@@ -36,6 +35,8 @@ header {
 
 footer {
     margin: auto;
+    background-color: var(--background-blue);
+    color: var(--background-blue);
 }
 
 /*Unsere Titel*/
@@ -164,21 +165,10 @@ a:hover {
     background-color: #87690f;
 }
 
-#homelink {
+#homelink, #spiel, #schule, #team {
     scroll-margin-top: 100px;
 }
 
-#spiel {
-    scroll-margin-top: 100px;
-}
-
-#schule {
-    scroll-margin-top: 100px;
-}
-
-#team {
-    scroll-margin-top: 100px;
-}
 
 /* ------------------- Buttons --------------------------- */
 button {
@@ -186,7 +176,7 @@ button {
     min-width: 150px;
     color: #E0FFFA;
     font-size: 1em;
-    border-radius: 11px;
+    border-radius: 29px;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -194,6 +184,8 @@ button {
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
     font-weight: 100;
+position: relative;
+
 }
 
 .play-btn, .contact-btn {
@@ -201,6 +193,7 @@ button {
     min-width: 230px;
     font-size: 1.6em;
     border-radius: 29px;
+    box-shadow: 2px 5px #306d6d;
 }
 
 .play-btn {
@@ -217,7 +210,7 @@ button {
 .more-btn {
     background-color: var(--salmon);
     margin: 5px 0 5px 0;
-
+    box-shadow: 1px 2px #cf7a94;
 }
 
 .play-btn:hover, .contact-btn:hover {
@@ -252,6 +245,7 @@ button {
     z-index: 100;
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
+    pointer-events: auto;
 }
 
 .menubutton:hover {
@@ -299,7 +293,8 @@ button {
 /* ------------------- Navbar aka Header todo --------------------------- */
 
 nav {
-    background-color: #2CA2D8;
+    background-color: var(--background-blue);
+    z-index: 999;
 }
 
 nav .logoNavbar {
@@ -319,11 +314,12 @@ nav ul {
 nav a,
 nav a:visited {
     display: block;
-    color: #E0FFFA;
+    color: var(--light-blue);
     line-height: 56px;
     text-transform: uppercase;
-    border-bottom: 0px solid #fff;
+    border-bottom: 0px solid var(--light-blue);
     font-size: 1.2rem;
+    padding: 0 20px 0 20px;
 }
 
 nav a:hover,
@@ -332,7 +328,7 @@ nav a.selected {
 }
 
 nav a:not(.selected):hover:after {
-    color: navy;
+    color: var(--green);
     position: absolute;
     right: 20px;
     font-family: 'Open Sans';
@@ -372,7 +368,6 @@ img.responsive {
 }
 
 
-
 /* ----------- media queries --------------------------- */
 @media screen and (min-width: 1000px) {
     .menubutton {
@@ -405,7 +400,7 @@ img.responsive {
         visibility: visible;
         opacity: 1;
         height: auto;
-        position: right;
+        position: fixed;
         top: 0;
     }
 
@@ -437,4 +432,67 @@ img.responsive {
     nav li {
         width: calc(100% / 7);
     }
-}*/
+}
+
+ ----------------------- todo images --------------------------- */
+
+
+
+.imageOne {
+    position: absolute;
+    width: 120%;
+    height: auto;
+    margin-top: 10px;
+    z-index: 2;
+    opacity: 0.5;
+    transform: rotate(7.35deg);
+}
+
+.imageTwo {
+    position: absolute;
+    width: 200%;
+    height: auto;
+    opacity: 0.5;
+    transform: rotate(-40deg);
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.imageThree {
+    position: absolute;
+    width: auto;
+    height: 70%;
+    opacity: 0.5;
+    transform: rotate(340deg);
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.imageFour {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    opacity: 0.5;
+    transform: rotate(70deg);
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.imageFive {
+    position: absolute;
+    width: 160%;
+    height: auto;
+    opacity: 0.9;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.lehrpersonen, .spiel, .team, .kontakt {
+    margin-top: 400px;
+    z-index: 800 !important;
+    position: relative;
+
+}
+
+
+

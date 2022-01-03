@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrap {
+  perspective-origin: 50% 50%;
+}
+.wrap .svg {
+  position: absolute;
+  bottom: -100vh;
+  transform-style: preserve-3d;
+}
+.wrap .green {
+  stroke: #7ceaa4;
+}
+.wrap .blue {
+  stroke: #3b3d54;
+}
+.wrap .salmon {
+  stroke: #cf7a94;
+}
+.wrap .svg:nth-child(1) {
+  left: 31%;
+  animation: raise1 16s linear infinite;
+  animation-delay: -2s;
+  transform: scale(0) rotate(199deg);
+  z-index: -6;
+  filter: blur(-5px);
+}
+@keyframes raise1 {
+  to {
+    bottom: 150vh;
+    transform: scale(-0.3) rotate(272deg);
+  }
+}
+.wrap .svg:nth-child(2) {
+  left: 69%;
+  animation: raise2 7s linear infinite;
+  animation-delay: 0s;
+  transform: scale(0.3) rotate(78deg);
+  z-index: -5;
+  filter: blur(-4px);
+}
+@keyframes raise2 {
+  to {
+    bottom: 150vh;
+    transform: scale(0) rotate(100deg);
+  }
+}
+.wrap .svg:nth-child(3) {
+  left: 29%;
+  animation: raise3 12s linear infinite;
+  animation-delay: -4s;
+  transform: scale(0.6) rotate(223deg);
+  z-index: -4;
+  filter: blur(-3px);
+}
+@keyframes raise3 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.3) rotate(58deg);
+  }
+}
+.wrap .svg:nth-child(4) {
+  left: 66%;
+  animation: raise4 10s linear infinite;
+  animation-delay: -4s;
+  transform: scale(0.9) rotate(137deg);
+  z-index: -3;
+  filter: blur(-2px);
+}
+@keyframes raise4 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.6) rotate(62deg);
+  }
+}
+.wrap .svg:nth-child(5) {
+  left: -11%;
+  animation: raise5 10s linear infinite;
+  animation-delay: -2s;
+  transform: scale(1.2) rotate(69deg);
+  z-index: -2;
+  filter: blur(-1px);
+}
+@keyframes raise5 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.9) rotate(346deg);
+  }
+}
+.wrap .svg:nth-child(6) {
+  left: 6%;
+  animation: raise6 12s linear infinite;
+  animation-delay: -1s;
+  transform: scale(1.5) rotate(228deg);
+  z-index: -1;
+  filter: blur(0px);
+}
+@keyframes raise6 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.2) rotate(109deg);
+  }
+}
+.wrap .svg:nth-child(7) {
+  left: 83%;
+  animation: raise7 21s linear infinite;
+  animation-delay: 0s;
+  transform: scale(1.8) rotate(348deg);
+  z-index: 0;
+  filter: blur(1px);
+}
+@keyframes raise7 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.5) rotate(31deg);
+  }
+}
+.wrap .svg:nth-child(8) {
+  left: 43%;
+  animation: raise8 17s linear infinite;
+  animation-delay: -3s;
+  transform: scale(2.1) rotate(171deg);
+  z-index: 1;
+  filter: blur(2px);
+}
+@keyframes raise8 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.8) rotate(298deg);
+  }
+}
+.wrap .svg:nth-child(9) {
+  left: 72%;
+  animation: raise9 12s linear infinite;
+  animation-delay: 0s;
+  transform: scale(2.4) rotate(76deg);
+  z-index: 2;
+  filter: blur(3px);
+}
+@keyframes raise9 {
+  to {
+    bottom: 150vh;
+    transform: scale(2.1) rotate(87deg);
+  }
+}
+.wrap .svg:nth-child(10) {
+  left: -15%;
+  animation: raise10 19s linear infinite;
+  animation-delay: 0s;
+  transform: scale(2.7) rotate(115deg);
+  z-index: 3;
+  filter: blur(4px);
+}
+@keyframes raise10 {
+  to {
+    bottom: 150vh;
+    transform: scale(2.4) rotate(5deg);
+  }
+}
+.wrap .svg:nth-child(11) {
+  left: 73%;
+  animation: raise11 8s linear infinite;
+  animation-delay: -4s;
+  transform: scale(3) rotate(10deg);
+  z-index: 4;
+  filter: blur(5px);
+}
+@keyframes raise11 {
+  to {
+    bottom: 150vh;
+    transform: scale(2.7) rotate(70deg);
+  }
+}
+
+/*# sourceMappingURL=atoms.css.map */
