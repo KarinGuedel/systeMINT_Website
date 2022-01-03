@@ -3,11 +3,13 @@
 
 <!--HEAD-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SysteMINT | game </title>
-  <link href="css/styleSM.css" type="text/css" rel="stylesheet" media="all"/>
-  <script type="text/javascript" src="js/main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysteMINT | game </title>
+    <link href="css/styleSM.css" type="text/css" rel="stylesheet" media="all"/>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/otslider.css"/>
+    <script src="js/otslider.js"></script>
 </head>
 
 <!--BODY-->
@@ -15,47 +17,47 @@
 
 <!--logo + navbar-->
 <header>
-  <div class="container">
-    <!--    hamburger-->
-    <div class="menubutton">
-      <span class="top"></span>
-      <span class="middle"></span>
-      <span class="bottom"></span>
+    <div class="container">
+        <!--    hamburger-->
+        <div class="menubutton">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+        <nav id="mainnav">
+            <ul>
+                <li><h1><a href="index.html"><span class="big">Syste</span><span class="bigSalmon">mint</span><span
+                        class="big"> game</span></a></h1></li>
+                <!--leerraum-->
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><a id="home" href="#homelink">Home</a></li>
+                <li><a href="#spiel">Spiel</a></li>
+                <li><a href="#schule">Schule</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a id="contact" href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav id="mainnav">
-        <ul>
-          <li><h1><a href="index.html"><span class="big">Syste</span><span class="bigSalmon">mint</span><span class="big"> game</span></a></h1></li>
-          <!--leerraum-->
-          <li><p></p></li>
-          <li><p></p></li>
-          <li><p></p></li>
-          <li><a id="home" href="#homelink">Home</a></li>
-          <li><a href="#spiel">Spiel</a></li>
-          <li><a href="#schule">Schule</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a id="contact" href="#kontakt">Kontakt</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
 </header>
 
 <!--            INTRO & TITLE       -->
 <div class="title">
-  <div class="container">
-    <h2 id="homelink">Wasserwelten</h2>
-    <h1>Systemint Game</h1>
-  </div>
+    <div class="container">
+        <h2 id="homelink">Wasserwelten</h2>
+        <h1>Systemint Game</h1>
+    </div>
 </div>
 
 <div class="intro">
-  <div class="container">
-    <p>In diesem Spiel verwischen die Grenzen zwischen Ober- und Unterwasserwelt. Das Wasser und die Stoffe, die wir
-      täglich nutzen, sind in einem System miteinander verbunden. Mit rätseln, tüfteln und experimentieren kommen
-      Jugendliche den gefährlichen Stoffen auf die Spur...</p>
-    <button type="button" class="play-btn">Spielen</button>
-    <button type="button" class="contact-btn">Melde Dich</button>
-  </div>
+    <div class="container">
+        <p>In diesem Spiel verwischen die Grenzen zwischen Ober- und Unterwasserwelt. Das Wasser und die Stoffe, die wir
+            täglich nutzen, sind in einem System miteinander verbunden. Mit rätseln, tüfteln und experimentieren kommen
+            Jugendliche den gefährlichen Stoffen auf die Spur...</p>
+        <button type="button" class="play-btn">Spielen</button>
+        <button type="button" class="contact-btn">Melde Dich</button>
+    </div>
 </div>
 
 <!--                 #### TITLE 1 - für Lehrpersonen ####          -->
@@ -74,7 +76,7 @@
       <p>Das Spiel ist für Oberstufenschulklassen konzipiert und zwar für alle Niveaus.
         Die Lehrperson muss mit dem Thema nicht vertraut sein. In den Fächern “Natur
         und Technik” und “Räume, Zeiten, Gesellschaften” gibt es Lehrplanbezüge.</p>
-      <button type="button" class="more-btn">Mehr...</button>
+      <button type="button" onclick="location.href='zielgruppe.html'" class="more-btn">Mehr...</button>
     </div>
   </div>
   <!--  CONTENT 2- Ziele   -->
@@ -102,66 +104,90 @@
 
 <!--  CONTENT  - Das Spiel  -->
 <div class="container spiel">
-  <div class="title">
-    <div class="container">
-      <h2 id="spiel">Dem Wasser auf der Spur</h2>
-      <h1>Das Spiel</h1>
+    <div class="title">
+        <div class="container">
+            <h2 id="spiel">Dem Wasser auf der Spur</h2>
+            <h1>Das Spiel</h1>
+        </div>
     </div>
-  </div>
 
-  <div class="wrapper">
-    <div class="content1">
-      <h3>Spielen</h3>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea. </p>
-      <button type="button" class="more-btn">Mehr...</button>
+    <div class="wrapper">
+        <div class="content1">
+            <h3>Spielen</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea. </p>
+            <button type="button" class="more-btn">Mehr...</button>
+        </div>
     </div>
-  </div>
-  <div class="wrapper">
-    <div class="content2">
-      <h3>Story</h3>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea. </p>
-      <button type="button" class="more-btn">Mehr...</button>
+    <div class="wrapper">
+        <div class="content2">
+            <h3>Story</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea. </p>
+            <button type="button" class="more-btn">Mehr...</button>
+        </div>
     </div>
-  </div>
-  <div class="wrapper">
-    <div class="content3">
-      <h3>Spielstruktur</h3>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea. </p>
-      <button type="button" class="more-btn">Mehr...</button>
+    <div class="wrapper">
+        <div class="content3">
+            <h3>Spielstruktur</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea. </p>
+            <button type="button" class="more-btn">Mehr...</button>
+        </div>
     </div>
-  </div>
 </div>
 
 <!--                 #### TITLE 3 - das Team ####          -->
+<!--      Initialize image Carousel     -->
+<script>
+    var otslider = new OTSlider();
+    otslider.init({
+        // or 'fade'
+        transition: 'slide',
+        // easing function
+        transitionTiming: "ease",
+        // duration in ms
+        transitionDuration: 500
+    });
+</script>
 <div class="container team">
-  <div class="title">
-    <div class="container">
-      <h2 id="team">Schule und Gamedesign</h2>
-      <h1>Das Team</h1>
+    <div class="title">
+        <div class="container">
+            <h2 id="team">Schule und Gamedesign</h2>
+            <h1>Das Team</h1>
+        </div>
+        <div class="ot-slider">
+            <img src="images/team/platzhalter2.jpeg" alt="platzhalter2"/>
+            <img src="images/team/platzhalter1.jpeg" alt="platzhalter1"/>
+            <img src="images/team/platzhalter2.jpeg" alt="platzhalter2"/>
+            <img src="images/team/platzhalter1.jpeg" alt="platzhalter1"/>
+        </div>
     </div>
-  </div>
 
-  <div class="content-no-button">
-    <div class="container">
-      <h3>Team</h3>
-      <ul>
-        <li><a href="#">Alain Zanchetta</a></li>
-        <li><a href="#">Madlaina Kalunder</a></li>
-        <li><a href="#">Alexandre Thomas</a></li>
-        <li><a href="#">Matthias von Arx</a></li>
-        <li><a href="#">Angela Thomasius</a></li>
-        <li><a href="#">Rita Hochstrat</a></li>
-        <li><a href="#">Karin Güdel</a></li>
-        <li><a href="#">Swaantje Brinkmann</a></li>
-      </ul>
+    <div class="content-no-button">
+        <div class="container">
+            <h3>Team</h3>
+            <ul>
+                <li><a href="#">Alain Zanchetta</a></li>
+                <li><a href="#">Madlaina Kalunder</a></li>
+                <li><a href="#">Alexandre Thomas</a></li>
+                <li><a href="#">Matthias von Arx</a></li>
+                <li><a href="#">Angela Thomasius</a></li>
+                <li><a href="#">Rita Hochstrat</a></li>
+                <li><a href="#">Karin Güdel</a></li>
+                <li><a href="#">Swaantje Brinkmann</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 
 <!--                 #### TITLE 4 - Kontakt todo          -->
@@ -173,7 +199,6 @@
       <br />
       <br />
     </div>
-  </div>
 
   <div class="content-no-button">
     <div class="container">
