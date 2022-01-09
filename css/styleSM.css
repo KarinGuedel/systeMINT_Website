@@ -361,12 +361,15 @@ nav li .bigSalmon {
     height: auto;
 }
 
-
 img.responsive {
     max-width: 100%;
     height: auto;
 }
 
+h1 .bigSalmon {
+    color: #F4827B;
+    text-shadow: 2px 2px #FF0000;
+}
 
 /* ----------- media queries --------------------------- */
 @media screen and (min-width: 1000px) {
