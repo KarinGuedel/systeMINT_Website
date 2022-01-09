@@ -1,12 +1,11 @@
-/*Unsere Fonts*/
+/* ===========================================================
+	TEAM systeMINT | HTML5 & CSS Project | 2021
+   ===========================================================	*/
+
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url("gridSM.css");
 @import url("otslider.css");
 @import url("atoms.css");
-
-/* ===========================================================
-	TEAM systeMINT | HTML5 & CSS Project | 2021
-   ===========================================================	*/
 
 /*Unsere Farben*/
 :root {
@@ -25,18 +24,33 @@ body {
     text-align: left;
     margin: 0;
     padding: 0;
-    background: linear-gradient(#081025, #177bb1, #3777c7, #22a8c3, #154f96, #194377, #194377, #081025, #194377);
+    background: linear-gradient(#081025,#081025, #177bb1, #3777c7, #22a8c3, #154f96, #194377, #194377, #081025, #081025, #081025);
     color: var(--light-blue);
 }
 
-header {
-    margin-bottom: 100px;
+header,
+footer,
+.iconbox {
+    background-color: var(--background-blue);
+    color: white;
 }
 
-footer {
-    margin: auto;
-    background-color: var(--background-blue);
+.iconbox:hover{
+    background-color: var(--salmon);
+    border-radius: 20px;
+}
+header a,header a:visited,
+footer a,footer a:visited,
+.iconbox a, .iconbox a:visited {
+    color: var(--light-blue);
+}
+a, a:visited {
     color: var(--background-blue);
+    text-decoration: none;
+}
+
+a:hover {
+	color: var(--salmon);
 }
 
 /*Unsere Titel*/
@@ -45,7 +59,7 @@ h1 {
     font-weight: 500;
     font-size: 8vw;
     margin: 0;
-    color: #E0FFFA;
+    color:var(--light-blue);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -67,7 +81,7 @@ h1 {
 }
 
 h2, h3 {
-    color: #E0FFFA;
+    color: var(--light-blue);
     text-transform: uppercase;
 }
 
@@ -109,12 +123,12 @@ p {
 
 /*@media only screen and (max-width: 700px) {
     p {
-        
+
     }
 }
 @media only screen and (max-width: 500px) {
     p {
-        
+
     }
 }*/
 
@@ -127,13 +141,21 @@ a:hover {
     color: var(--salmon);
 }
 
-.title {
-    margin: auto;
-}
 
 .intro {
     margin: auto 0 150px 0;
 }
+
+
+
+.center{
+    text-align: center;
+}
+a.social, a.social:visited{
+    color: var(--light-blue);
+    padding-right: 10px; 
+}
+
 
 /* ------------------- Contents --------------------------- */
 .content1, .content2 {
@@ -144,28 +166,31 @@ a:hover {
     margin: auto 0 150px 0;
 }
 
-/*todo only temporär zum unterscheiden*/
-.lehrpersonen {
-    background-color: purple;
-}
+/*!*todo only temporär zum unterscheiden*!*/
+/*.lehrpersonen {*/
+/*    background-color: #1e4a6a;*/
+/*}*/
 
-.spiel {
-    background-color: #fa9ae6;
-}
+/*.spiel {*/
+/*    background-color: #092238;*/
 
-.team {
-    background-color: #ff0c52;
-}
+/*}*/
 
-.kontakt {
-    background-color: #e9630b;
-}
+/*.title {*/
+/*    background-color: #092238;*/
+/*}*/
 
-.footer {
-    background-color: #87690f;
-}
+/*.team {*/
+/*    background-color: #ff0c52;*/
+/*}*/
 
-#homelink, #spiel, #schule, #team {
+/*.kontakt {*/
+/*    background-color: #e9630b;*/
+/*}*/
+
+
+
+#homelink, #spiel, #schule, #team, #kontakt {
     scroll-margin-top: 100px;
 }
 
@@ -184,7 +209,7 @@ button {
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
     font-weight: 100;
-position: relative;
+    position: relative;
 
 }
 
@@ -236,72 +261,63 @@ position: relative;
 
 /* -----------menu button  aka. Hamburger --------------------------- */
 .menubutton {
-    position: fixed;
-    top: 20px;
-    right: 25px;
-    height: 27px;
-    width: 35px;
-    cursor: pointer;
-    z-index: 100;
-    -webkit-transition: opacity .25s ease;
-    transition: opacity .25s ease;
-    pointer-events: auto;
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
 }
-
 .menubutton:hover {
-    opacity: .7;
+  opacity: .7;
 }
-
 .menubutton.active .top {
-    -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
-    transform: translateY(11px) translateX(0) rotate(45deg);
-    background: var(--salmon);
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+          transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
 }
-
 .menubutton.active .middle {
-    opacity: 0;
-    background: var(--salmon);
+  opacity: 0;
+  background: #FFF;
 }
-
 .menubutton.active .bottom {
-    -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: var(--salmon);
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+          transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
 }
-
 .menubutton span {
     background: var(--salmon);
-    border: none;
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transition: all .35s ease;
-    transition: all .35s ease;
-    cursor: pointer;
+  border: none;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+  cursor: pointer;
 }
-
 .menubutton span:nth-of-type(2) {
-    top: 11px;
+  top: 11px;
 }
-
 .menubutton span:nth-of-type(3) {
-    top: 22px;
+  top: 22px;
 }
-
-/* ------------------- Navbar aka Header todo --------------------------- */
-
+/* -------------- navigavtion------------- 	*/
 nav {
     background-color: var(--background-blue);
     z-index: 999;
 }
 
-nav .logoNavbar {
-    padding: 0;
-}
+ nav .container{
+	padding: 0;
+	 width: 100%;
+	}
 
-nav ul {
+nav ul{
     padding: 0;
     margin: 0 auto;
     list-style: none;
@@ -312,149 +328,109 @@ nav ul {
 }
 
 nav a,
-nav a:visited {
-    display: block;
-    color: var(--light-blue);
-    line-height: 56px;
-    text-transform: uppercase;
-    border-bottom: 0px solid var(--light-blue);
-    font-size: 1.2rem;
-    padding: 0 20px 0 20px;
-}
-
+nav a:visited{
+	display:block;
+	color:var(--light-blue);
+	line-height:56px;
+	text-transform: uppercase;
+	border-bottom:1px solid var(--light-blue);
+	font-size:1.3rem;
+	padding:0 20px;
+	}		
 nav a:hover,
 nav a.selected {
-    color: var(--salmon);
-}
-
+	color:var(--salmon);
+	}
 nav a:not(.selected):hover:after {
     color: var(--green);
-    position: absolute;
-    right: 20px;
+	position:absolute;
+	right: 20px;
     font-family: 'Open Sans';
-    content: "\f0da";
-    font-weight: 900;
-    font-size: 2vw;
-}
+	content: "\f0da";
+	font-weight: 900;
+	font-size:2rem;
+	}	
 
 #mainnav {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+}
+#mainnav.active {
+	visibility: visible;
+	opacity: 1;
+	height: auto;
 }
 
-nav li .big {
-    font-size: 1.8rem;
+
+.big {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 500;
+    font-size: 2rem;
 }
 
-nav li .bigSalmon {
-    font-size: 1.8rem;
+.salmon {
     color: #F4827B;
 }
 
-#mainnav.active {
-    visibility: visible;
-    opacity: 1;
+img.responsive{
+	max-width: 100%;
+	height:auto;
+	}
+
+
+/* -----------media queries --------------------------- */
+@media screen and (min-width: 640px) {
+.menubutton { 
+	display: none;
+ }
+
+ nav ul:after {
+	height: 0;
+	content: " ";
+	display: block;
+	clear: left;
+}
+nav li {
+	width: calc(100%/4);
+	float: left;
+	text-align:center;
+}	
+nav a {
+	border-bottom: none;
+}
+nav a:not(.selected):hover:after{
+	content: " ";
+	}	
+
+#mainnav {
+	visibility: visible;
+	opacity: 1;
     height: auto;
 }
 
+ }
 
-img.responsive {
-    max-width: 100%;
-    height: auto;
-}
+/* -----------media queries --------------------------- */
 
 
-/* ----------- media queries --------------------------- */
-@media screen and (min-width: 1000px) {
-    .menubutton {
-        display: none;
-    }
-
-    nav ul:after {
-        height: 0;
-        content: " ";
-        display: block;
-        clear: left;
-    }
-
-    nav li {
-        width: calc(100% / 9);
-        float: left;
-        margin: auto;
-        text-align: center;
-    }
-
-    nav a {
-        border-bottom: none;
-    }
-
-    nav a:not(.selected):hover:after {
-        content: " ";
-    }
-
-    #mainnav {
-        visibility: visible;
-        opacity: 1;
-        height: auto;
-        position: fixed;
-        top: 0;
-    }
-
-    nav #contact{
-        text-align: right;
-    }
-
-}
-
-/*@media screen and (max-width: 1300px) and (min-width: 700px) {
-    #home {
-        display: none;
-    }
-
-    nav li {
-        width: calc(100% / 8);
-    }
-}
-
-@media screen and (max-width: 1100px) and (min-width: 700px) {
-    #contact {
-        display: none;
-    }
-
-    #teamnav {
-        text-align: right;
-    }
-
-    nav li {
-        width: calc(100% / 7);
-    }
-}
-
- ----------------------- todo images --------------------------- */
-
-
-
-.imageOne {
+imageOne {
     position: absolute;
-    width: 120%;
+    width: 180%;
     height: auto;
     margin-top: 10px;
-    z-index: 2;
+    z-index: 1;
     opacity: 0.5;
     transform: rotate(7.35deg);
 }
 
 .imageTwo {
     position: absolute;
+    margin-top: 10px;
     width: 200%;
     height: auto;
     opacity: 0.5;
     transform: rotate(-40deg);
-    margin-top: 10px;
     z-index: 1;
 }
 
@@ -487,12 +463,13 @@ img.responsive {
     z-index: 1;
 }
 
+
+
 .lehrpersonen, .spiel, .team, .kontakt {
-    margin-top: 400px;
     z-index: 800 !important;
     position: relative;
-
 }
 
-
-
+.title, .lehrpersonen {
+    padding-top: 7rem;
+}
