@@ -384,16 +384,6 @@ nav a:not(.selected):hover:after {
 	height: auto;
 }
 
-<<<<<<< HEAD:css/styleSM.css
-img.responsive {
-    max-width: 100%;
-    height: auto;
-}
-
-h1 .bigSalmon {
-    color: #F4827B;
-    text-shadow: 2px 2px #FF0000;
-=======
 
 .big {
     font-family: 'Luckiest Guy', cursive;
@@ -403,7 +393,7 @@ h1 .bigSalmon {
 
 .salmon {
     color: #F4827B;
->>>>>>> develop:css/style.css
+    text-shadow: 2px 2px #FF0000;
 }
 
 img.responsive{
