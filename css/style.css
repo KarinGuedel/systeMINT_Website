@@ -24,7 +24,7 @@ body {
     text-align: left;
     margin: 0;
     padding: 0;
-    background: linear-gradient(#081025,#081025, #177bb1, #3777c7, #22a8c3, #154f96, #194377, #194377, #081025, #081025, #081025);
+    background: linear-gradient(#081025, #081025, #0a5984,  #194377, #081025, #081025, #081025);
     color: var(--light-blue);
 }
 
@@ -81,7 +81,7 @@ h1 {
 }
 
 h2, h3 {
-    color: var(--light-blue);
+
     text-transform: uppercase;
 }
 
@@ -89,10 +89,12 @@ h2 {
     font-weight: 200;
     font-size: 2vw;
     margin: auto 0 20px 0;
+    color: #5a5d6c;
 }
 
 /*Titel über Content-Elementen*/
 h3 {
+    color: var(--light-blue);
     font-weight: 400;
     font-size: 2vw;
     margin: 80px 0 20px 0;
@@ -119,6 +121,13 @@ h3 {
 p {
     line-height: 2rem;
     overflow-wrap: break-word;
+}
+
+.contact-title{
+    font-size: 1.9rem;
+    color: var(--green);
+    overflow-wrap: break-word;
+
 }
 
 /*@media only screen and (max-width: 700px) {
@@ -188,6 +197,18 @@ a.social, a.social:visited{
 /*    background-color: #e9630b;*/
 /*}*/
 
+.zielgruppe{
+    background-color: var(--background-blue);
+}
+
+.zielgruppe h1, h3 {
+    color: var(--green);
+}
+
+.background-detail {
+    background-color: var(--background-blue) !important;
+}
+
 
 
 #homelink, #spiel, #schule, #team, #kontakt {
@@ -216,6 +237,7 @@ button {
 .play-btn, .contact-btn {
     height: 4rem;
     min-width: 230px;
+    font-weight: bold;
     font-size: 1.6em;
     border-radius: 29px;
     box-shadow: 2px 5px #306d6d;
@@ -228,7 +250,7 @@ button {
 
 .contact-btn {
     background-color: var(--light-blue);
-    color: var(--green);
+    color: var(--salmon);
     margin: 5px 0 0 0;
 }
 
@@ -241,8 +263,8 @@ button {
 .play-btn:hover, .contact-btn:hover {
     background-color: var(--salmon);
     color: var(--light-blue)
-
 }
+
 
 .more-btn:hover {
     opacity: .9;
@@ -465,9 +487,10 @@ imageOne {
 
 
 
-.lehrpersonen, .spiel, .team, .kontakt {
+.lehrpersonen, .spiel, .team, .kontakt, .title {
     z-index: 800 !important;
     position: relative;
+    padding-bottom: 7rem;
 }
 
 .title, .lehrpersonen {
