@@ -58,7 +58,7 @@ function OTSlider(){
 			swipeFreely : false,
 			responsive : true,
 			roundButtons : false,
-			numericNav : true,
+			numericNav : false,
 			centered : false,
 		},
 		
