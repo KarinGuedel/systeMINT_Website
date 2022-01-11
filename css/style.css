@@ -31,7 +31,7 @@ body {
 header,
 footer,
 .iconbox {
-    background-color: var(--background-blue);
+    background-color: transparent;
     color: white;
 }
 
@@ -107,7 +107,6 @@ h1 {
 
 
 h2, h3 {
-
     text-transform: uppercase;
 }
 
@@ -115,7 +114,7 @@ h2 {
     font-weight: 200;
     font-size: 2vw;
     margin: auto 0 20px 0;
-    color: #5a5d6c;
+    color: var(--light-blue);
 }
 
 /*Titel über Content-Elementen*/
@@ -356,8 +355,8 @@ button {
 }
 /* -------------- navigavtion------------- 	*/
 nav {
-    background-color: var(--background-blue);
-    z-index: 999;
+    background-color: transparent;
+    z-index: 10000;
 }
 
  nav .container{
