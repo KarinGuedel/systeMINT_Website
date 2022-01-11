@@ -123,6 +123,10 @@ p {
     overflow-wrap: break-word;
 }
 
+li {
+    line-height: 2rem;
+}
+
 .contact-title{
     font-size: 1.9rem;
     color: var(--green);
