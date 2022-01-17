@@ -27,6 +27,16 @@
 	height:inherit;
 	overflow:hidden;
 }
+
+@media only screen and (min-width: 600px) {
+	.ot-slider .ot-items {
+		position: relative;
+		width: 100%;
+		height: inherit;
+		overflow: hidden;
+	}
+}
+
 .ot-slider .ot-items .ot-wrap{
 	position:relative;
 	height:100%;
@@ -138,7 +148,7 @@
 .ot-slider.ot-slider-round-buttons .ot-nav ul li{
 	border-radius:50%!important;
 }
-/*Numeric Navigation*/
+Numeric Navigation
 .ot-slider.ot-slider-numeric-nav .ot-nav ul li{
 	width:15px;
 	height:15px;

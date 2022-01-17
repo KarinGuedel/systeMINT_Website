@@ -58,6 +58,9 @@ is for the items to remain in source order, and all span right across the grid.
     }
 }
 
+
+
+
 /* =============================================================================
    PARTICLES | MADAM MONOROM | monorom.com | HTML5 & CSS Project
    This project is licensed under the MIT License
@@ -70,20 +73,7 @@ is for the items to remain in source order, and all span right across the grid.
    - Col
   =============================================================================*/
 
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.container {
-    padding: 20px;
-    margin:0 auto;
-    width:95%;
-    max-width:1280px;
-}
-.space{
-    padding:20px;
-}
+
 .prtcl-row,
 .prtcl-row .col{
     box-sizing: border-box;

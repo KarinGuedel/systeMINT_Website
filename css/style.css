@@ -50,12 +50,13 @@ a, a:visited {
 }
 
 a:hover {
-	color: var(--salmon);
+    color: var(--salmon);
 }
 
 .introtext{
     font-size: 1.5em;
     line-height: 140%;
+    max-width: 900px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -146,6 +147,11 @@ h3 {
 p {
     line-height: 2rem;
     overflow-wrap: break-word;
+    max-width: 700px;
+}
+
+li {
+    line-height: 2rem;
 }
 
 .contact-title{
@@ -157,12 +163,10 @@ p {
 
 /*@media only screen and (max-width: 700px) {
     p {
-
     }
 }
 @media only screen and (max-width: 500px) {
     p {
-
     }
 }*/
 
@@ -187,7 +191,7 @@ a:hover {
 }
 a.social, a.social:visited{
     color: var(--light-blue);
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 
 
@@ -223,7 +227,7 @@ a.social, a.social:visited{
 /*}*/
 
 .zielgruppe{
-    background-color: var(--background-blue);
+    background: linear-gradient(#081025, #081025, #0a5984,  #194377, #081025, #081025, #081025);
 }
 
 .zielgruppe h1, h3 {
@@ -308,50 +312,50 @@ button {
 
 /* -----------menu button  aka. Hamburger --------------------------- */
 .menubutton {
-  position: fixed;
-  top: 20px;
-  right: 25px;
-  height: 27px;
-  width: 35px;
-  cursor: pointer;
-  z-index: 100;
-  -webkit-transition: opacity .25s ease;
-  transition: opacity .25s ease;
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
 }
 .menubutton:hover {
-  opacity: .7;
+    opacity: .7;
 }
 .menubutton.active .top {
-  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
-          transform: translateY(11px) translateX(0) rotate(45deg);
-  background: #FFF;
+    -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #FFF;
 }
 .menubutton.active .middle {
-  opacity: 0;
-  background: #FFF;
+    opacity: 0;
+    background: #FFF;
 }
 .menubutton.active .bottom {
-  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
-          transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #FFF;
+    -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #FFF;
 }
 .menubutton span {
     background: var(--salmon);
-  border: none;
-  height: 3px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: all .35s ease;
-  transition: all .35s ease;
-  cursor: pointer;
+    border: none;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
 }
 .menubutton span:nth-of-type(2) {
-  top: 11px;
+    top: 11px;
 }
 .menubutton span:nth-of-type(3) {
-  top: 22px;
+    top: 22px;
 }
 /* -------------- navigavtion------------- 	*/
 nav {
@@ -359,10 +363,10 @@ nav {
     z-index: 10000;
 }
 
- nav .container{
-	padding: 0;
-	 width: 100%;
-	}
+nav .container{
+    padding: 0;
+    width: 100%;
+}
 
 nav ul{
     padding: 0;
@@ -376,37 +380,37 @@ nav ul{
 
 nav a,
 nav a:visited{
-	display:block;
-	color:var(--light-blue);
-	line-height:56px;
-	text-transform: uppercase;
-	border-bottom:1px solid var(--light-blue);
-	font-size:1.3rem;
-	padding:0 20px;
-	}		
+    display:block;
+    color:var(--light-blue);
+    line-height:56px;
+    text-transform: uppercase;
+    border-bottom:1px solid var(--light-blue);
+    font-size:1.3rem;
+    padding:0 20px;
+}
 nav a:hover,
 nav a.selected {
-	color:var(--salmon);
-	}
+    color:var(--salmon);
+}
 nav a:not(.selected):hover:after {
     color: var(--green);
-	position:absolute;
-	right: 20px;
+    position:absolute;
+    right: 20px;
     font-family: 'Open Sans';
-	content: "\f0da";
-	font-weight: 900;
-	font-size:2rem;
-	}	
+    content: "\f0da";
+    font-weight: 900;
+    font-size:2rem;
+}
 
 #mainnav {
-	visibility: hidden;
-	opacity: 0;
-	height: 0;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
 }
 #mainnav.active {
-	visibility: visible;
-	opacity: 1;
-	height: auto;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
 }
 
 
@@ -422,42 +426,42 @@ nav a:not(.selected):hover:after {
 }
 
 img.responsive{
-	max-width: 100%;
-	height:auto;
-	}
+    max-width: 100%;
+    height:auto;
+}
 
 
 /* -----------media queries --------------------------- */
 @media screen and (min-width: 640px) {
-.menubutton { 
-	display: none;
- }
+    .menubutton {
+        display: none;
+    }
 
- nav ul:after {
-	height: 0;
-	content: " ";
-	display: block;
-	clear: left;
-}
-nav li {
-	width: calc(100%/4);
-	float: left;
-	text-align:center;
-}	
-nav a {
-	border-bottom: none;
-}
-nav a:not(.selected):hover:after{
-	content: " ";
-	}	
+    nav ul:after {
+        height: 0;
+        content: " ";
+        display: block;
+        clear: left;
+    }
+    nav li {
+        width: calc(100%/4);
+        float: left;
+        text-align:center;
+    }
+    nav a {
+        border-bottom: none;
+    }
+    nav a:not(.selected):hover:after{
+        content: " ";
+    }
 
-#mainnav {
-	visibility: visible;
-	opacity: 1;
-    height: auto;
-}
+    #mainnav {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
 
- }
+}
 
 /* -----------media queries --------------------------- */
 
@@ -510,7 +514,6 @@ imageOne {
     margin-top: 10px;
     z-index: 1;
 }
-
 
 
 .lehrpersonen, .spiel, .team, .kontakt, .title {
