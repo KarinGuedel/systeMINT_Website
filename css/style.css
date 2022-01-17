@@ -227,7 +227,7 @@ a.social, a.social:visited{
 /*}*/
 
 .zielgruppe{
-    background-color: var(--background-blue);
+    background: linear-gradient(#081025, #081025, #0a5984,  #194377, #081025, #081025, #081025);
 }
 
 .zielgruppe h1, h3 {
