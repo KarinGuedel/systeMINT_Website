@@ -31,7 +31,7 @@ body {
 header,
 footer,
 .iconbox {
-    background-color: var(--background-blue);
+    background-color: transparent;
     color: white;
 }
 
@@ -52,6 +52,31 @@ a, a:visited {
 a:hover {
     color: var(--salmon);
 }
+
+.introtext{
+    font-size: 1.5em;
+    line-height: 140%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .introtext {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .introtext {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .introtext {
+        font-size: 1.2em;
+    }
+}
+
+
 
 /*Unsere Titel*/
 h1 {
@@ -80,8 +105,8 @@ h1 {
     }
 }
 
-h2, h3 {
 
+h2, h3 {
     text-transform: uppercase;
 }
 
@@ -89,7 +114,7 @@ h2 {
     font-weight: 200;
     font-size: 2vw;
     margin: auto 0 20px 0;
-    color: #5a5d6c;
+    color: var(--light-blue);
 }
 
 /*Titel über Content-Elementen*/
@@ -332,8 +357,8 @@ button {
 }
 /* -------------- navigavtion------------- 	*/
 nav {
-    background-color: var(--background-blue);
-    z-index: 999;
+    background-color: transparent;
+    z-index: 10000;
 }
 
 nav .container{
@@ -395,6 +420,7 @@ nav a:not(.selected):hover:after {
 
 .salmon {
     color: #F4827B;
+    text-shadow: 2px 2px #FF0000;
 }
 
 img.responsive{
