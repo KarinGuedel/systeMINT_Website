@@ -242,6 +242,7 @@ a.social, a.social:visited{
 
 #homelink, #spiel, #schule, #team, #kontakt {
     scroll-margin-top: 100px;
+    z-index: 80 !important;
 }
 
 
@@ -406,6 +407,7 @@ nav a:not(.selected):hover:after {
     visibility: hidden;
     opacity: 0;
     height: 0;
+    position: relative;
 }
 #mainnav.active {
     visibility: visible;
@@ -466,55 +468,62 @@ img.responsive{
 /* -----------media queries --------------------------- */
 
 
-imageOne {
-    position: absolute;
-    width: 180%;
+.imageOne {
+    width: 150%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 30rem;
     z-index: 1;
+    position:absolute;
+    top:0;
+    left:0;
     opacity: 0.5;
     transform: rotate(7.35deg);
 }
 
 .imageTwo {
-    position: absolute;
-    margin-top: 10px;
-    width: 200%;
+    margin-top: 100rem;
+    width: 100%;
     height: auto;
     opacity: 0.5;
-    transform: rotate(-40deg);
     z-index: 1;
+    position:absolute;
+    top:0;
+    left:0;
 }
 
 .imageThree {
+    margin-top: 200rem;
     position: absolute;
     width: auto;
-    height: 70%;
+    height: 200%;
     opacity: 0.5;
     transform: rotate(340deg);
-    margin-top: 10px;
     z-index: 1;
+    top:0;
+    left:0;
 }
 
 .imageFour {
     position: absolute;
-    width: 90%;
+    width: 120%;
     height: auto;
     opacity: 0.5;
-    transform: rotate(70deg);
-    margin-top: 10px;
+    margin-top: 150rem;
     z-index: 1;
+    top:0;
+    left:0;
 }
 
 .imageFive {
     position: absolute;
-    width: 160%;
+    width: 130%;
     height: auto;
-    opacity: 0.9;
-    margin-top: 10px;
+    opacity: 0.4;
+    margin-top: 180rem;
     z-index: 1;
+    top:0;
+    left:0;
 }
-
 
 .lehrpersonen, .spiel, .team, .kontakt, .title {
     z-index: 800 !important;
