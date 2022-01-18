@@ -77,8 +77,6 @@ a:hover {
     }
 }
 
-
-
 /*Unsere Titel*/
 h1 {
     font-family: 'Luckiest Guy', cursive;
@@ -105,7 +103,6 @@ h1 {
         font-size: 9vw;
     }
 }
-
 
 h2, h3 {
     text-transform: uppercase;
@@ -158,17 +155,7 @@ li {
     font-size: 1.9rem;
     color: var(--green);
     overflow-wrap: break-word;
-
 }
-
-/*@media only screen and (max-width: 700px) {
-    p {
-    }
-}
-@media only screen and (max-width: 500px) {
-    p {
-    }
-}*/
 
 a, a:visited {
     color: var(--green);
@@ -179,12 +166,9 @@ a:hover {
     color: var(--salmon);
 }
 
-
 .intro {
     margin: auto 0 150px 0;
 }
-
-
 
 .center{
     text-align: center;
@@ -194,7 +178,6 @@ a.social, a.social:visited{
     padding-right: 10px;
 }
 
-
 /* ------------------- Contents --------------------------- */
 .content1, .content2 {
     margin: auto 0 50px 0;
@@ -203,28 +186,6 @@ a.social, a.social:visited{
 .content3, .content-no-button {
     margin: auto 0 150px 0;
 }
-
-/*!*todo only temporär zum unterscheiden*!*/
-/*.lehrpersonen {*/
-/*    background-color: #1e4a6a;*/
-/*}*/
-
-/*.spiel {*/
-/*    background-color: #092238;*/
-
-/*}*/
-
-/*.title {*/
-/*    background-color: #092238;*/
-/*}*/
-
-/*.team {*/
-/*    background-color: #ff0c52;*/
-/*}*/
-
-/*.kontakt {*/
-/*    background-color: #e9630b;*/
-/*}*/
 
 .zielgruppe{
     background: linear-gradient(#081025, #081025, #0a5984,  #194377, #081025, #081025, #081025);
@@ -238,12 +199,9 @@ a.social, a.social:visited{
     background-color: var(--background-blue) !important;
 }
 
-
-
 #homelink, #spiel, #schule, #team, #kontakt {
     scroll-margin-top: 100px;
 }
-
 
 /* ------------------- Buttons --------------------------- */
 button {
@@ -260,7 +218,6 @@ button {
     transition: opacity .25s ease;
     font-weight: 100;
     position: relative;
-
 }
 
 .play-btn, .contact-btn {
@@ -413,7 +370,6 @@ nav a:not(.selected):hover:after {
     height: auto;
 }
 
-
 .big {
     font-family: 'Luckiest Guy', cursive;
     font-weight: 500;
@@ -430,6 +386,15 @@ img.responsive{
     height:auto;
 }
 
+.lehrpersonen, .spiel, .team, .kontakt, .title {
+    z-index: 800 !important;
+    position: relative;
+    padding-bottom: 7rem;
+}
+
+.title, .lehrpersonen {
+    padding-top: 7rem;
+}
 
 /* -----------media queries --------------------------- */
 @media screen and (min-width: 640px) {
@@ -461,67 +426,4 @@ img.responsive{
         height: auto;
     }
 
-}
-
-/* -----------media queries --------------------------- */
-
-
-imageOne {
-    position: absolute;
-    width: 180%;
-    height: auto;
-    margin-top: 10px;
-    z-index: 1;
-    opacity: 0.5;
-    transform: rotate(7.35deg);
-}
-
-.imageTwo {
-    position: absolute;
-    margin-top: 10px;
-    width: 200%;
-    height: auto;
-    opacity: 0.5;
-    transform: rotate(-40deg);
-    z-index: 1;
-}
-
-.imageThree {
-    position: absolute;
-    width: auto;
-    height: 70%;
-    opacity: 0.5;
-    transform: rotate(340deg);
-    margin-top: 10px;
-    z-index: 1;
-}
-
-.imageFour {
-    position: absolute;
-    width: 90%;
-    height: auto;
-    opacity: 0.5;
-    transform: rotate(70deg);
-    margin-top: 10px;
-    z-index: 1;
-}
-
-.imageFive {
-    position: absolute;
-    width: 160%;
-    height: auto;
-    opacity: 0.9;
-    margin-top: 10px;
-    z-index: 1;
-}
-
-
-.lehrpersonen, .spiel, .team, .kontakt, .title {
-    z-index: 800 !important;
-    position: relative;
-    padding-bottom: 7rem;
-}
-
-.title, .lehrpersonen {
-    padding-top: 7rem;
 }
