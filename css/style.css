@@ -77,8 +77,6 @@ a:hover {
     }
 }
 
-
-
 /*Unsere Titel*/
 h1 {
     font-family: 'Luckiest Guy', cursive;
@@ -105,7 +103,6 @@ h1 {
         font-size: 9vw;
     }
 }
-
 
 h2, h3 {
     text-transform: uppercase;
@@ -158,17 +155,7 @@ li {
     font-size: 1.9rem;
     color: var(--green);
     overflow-wrap: break-word;
-
 }
-
-/*@media only screen and (max-width: 700px) {
-    p {
-    }
-}
-@media only screen and (max-width: 500px) {
-    p {
-    }
-}*/
 
 a, a:visited {
     color: var(--green);
@@ -179,12 +166,9 @@ a:hover {
     color: var(--salmon);
 }
 
-
 .intro {
     margin: auto 0 150px 0;
 }
-
-
 
 .center{
     text-align: center;
@@ -194,7 +178,6 @@ a.social, a.social:visited{
     padding-right: 10px;
 }
 
-
 /* ------------------- Contents --------------------------- */
 .content1, .content2 {
     margin: auto 0 50px 0;
@@ -203,28 +186,6 @@ a.social, a.social:visited{
 .content3, .content-no-button {
     margin: auto 0 150px 0;
 }
-
-/*!*todo only temporär zum unterscheiden*!*/
-/*.lehrpersonen {*/
-/*    background-color: #1e4a6a;*/
-/*}*/
-
-/*.spiel {*/
-/*    background-color: #092238;*/
-
-/*}*/
-
-/*.title {*/
-/*    background-color: #092238;*/
-/*}*/
-
-/*.team {*/
-/*    background-color: #ff0c52;*/
-/*}*/
-
-/*.kontakt {*/
-/*    background-color: #e9630b;*/
-/*}*/
 
 .zielgruppe{
     background: linear-gradient(#081025, #081025, #0a5984,  #194377, #081025, #081025, #081025);
@@ -238,13 +199,10 @@ a.social, a.social:visited{
     background-color: var(--background-blue) !important;
 }
 
-
-
 #homelink, #spiel, #schule, #team, #kontakt {
     scroll-margin-top: 100px;
     z-index: 80 !important;
 }
-
 
 /* ------------------- Buttons --------------------------- */
 button {
@@ -261,7 +219,6 @@ button {
     transition: opacity .25s ease;
     font-weight: 100;
     position: relative;
-
 }
 
 .play-btn, .contact-btn {
@@ -415,7 +372,6 @@ nav a:not(.selected):hover:after {
     height: auto;
 }
 
-
 .big {
     font-family: 'Luckiest Guy', cursive;
     font-weight: 500;
@@ -432,6 +388,15 @@ img.responsive{
     height:auto;
 }
 
+.lehrpersonen, .spiel, .team, .kontakt, .title {
+    z-index: 800 !important;
+    position: relative;
+    padding-bottom: 7rem;
+}
+
+.title, .lehrpersonen {
+    padding-top: 7rem;
+}
 
 /* -----------media queries --------------------------- */
 @media screen and (min-width: 640px) {
@@ -462,67 +427,6 @@ img.responsive{
         opacity: 1;
         height: auto;
     }
-
-}
-
-/* -----------media queries --------------------------- */
-
-
-.imageOne {
-    width: 150%;
-    height: auto;
-    margin-top: 30rem;
-    z-index: 1;
-    position:absolute;
-    top:0;
-    left:0;
-    opacity: 0.5;
-    transform: rotate(7.35deg);
-}
-
-.imageTwo {
-    margin-top: 100rem;
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-    z-index: 1;
-    position:absolute;
-    top:0;
-    left:0;
-}
-
-.imageThree {
-    margin-top: 200rem;
-    position: absolute;
-    width: auto;
-    height: 200%;
-    opacity: 0.5;
-    transform: rotate(340deg);
-    z-index: 1;
-    top:0;
-    left:0;
-}
-
-.imageFour {
-    position: absolute;
-    width: 120%;
-    height: auto;
-    opacity: 0.5;
-    margin-top: 150rem;
-    z-index: 1;
-    top:0;
-    left:0;
-}
-
-.imageFive {
-    position: absolute;
-    width: 130%;
-    height: auto;
-    opacity: 0.4;
-    margin-top: 180rem;
-    z-index: 1;
-    top:0;
-    left:0;
 }
 
 .lehrpersonen, .spiel, .team, .kontakt, .title {
@@ -534,3 +438,50 @@ img.responsive{
 .title, .lehrpersonen {
     padding-top: 7rem;
 }
+
+/* -----------background pics --------------------------- */
+
+.imageOne, .imageTwo, .imageThree, .imageFour, .imageFive {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+.imageOne {
+    width: 150%;
+    height: auto;
+    margin-top: 30rem;
+    opacity: 0.5;
+    transform: rotate(7.35deg);
+}
+
+.imageTwo {
+    margin-top: 100rem;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.imageThree {
+    margin-top: 200rem;
+    width: auto;
+    height: 200%;
+    opacity: 0.5;
+    transform: rotate(340deg);
+}
+
+.imageFour {
+    width: 120%;
+    height: auto;
+    opacity: 0.5;
+    margin-top: 150rem;
+}
+
+.imageFive {
+    width: 130%;
+    height: auto;
+    opacity: 0.4;
+    margin-top: 180rem;
+}
+
