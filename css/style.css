@@ -427,65 +427,6 @@ img.responsive{
         opacity: 1;
         height: auto;
     }
-
-}
-
-/* -----------background pics --------------------------- */
-.imageOne {
-    width: 150%;
-    height: auto;
-    margin-top: 30rem;
-    z-index: 1;
-    position:absolute;
-    top:0;
-    left:0;
-    opacity: 0.5;
-    transform: rotate(7.35deg);
-}
-
-.imageTwo {
-    margin-top: 100rem;
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-    z-index: 1;
-    position:absolute;
-    top:0;
-    left:0;
-}
-
-.imageThree {
-    margin-top: 200rem;
-    position: absolute;
-    width: auto;
-    height: 200%;
-    opacity: 0.5;
-    transform: rotate(340deg);
-    z-index: 1;
-    top:0;
-    left:0;
-}
-
-.imageFour {
-    position: absolute;
-    width: 120%;
-    height: auto;
-    opacity: 0.5;
-    margin-top: 150rem;
-    z-index: 1;
-    top:0;
-    left:0;
-}
-
-.imageFive {
-    position: absolute;
-    width: 130%;
-    height: auto;
-    opacity: 0.4;
-    margin-top: 180rem;
-    z-index: 1;
-    top:0;
-    left:0;
 }
 
 .lehrpersonen, .spiel, .team, .kontakt, .title {
@@ -497,3 +438,50 @@ img.responsive{
 .title, .lehrpersonen {
     padding-top: 7rem;
 }
+
+/* -----------background pics --------------------------- */
+
+.imageOne, .imageTwo, .imageThree, .imageFour, .imageFive {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+.imageOne {
+    width: 150%;
+    height: auto;
+    margin-top: 30rem;
+    opacity: 0.5;
+    transform: rotate(7.35deg);
+}
+
+.imageTwo {
+    margin-top: 100rem;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.imageThree {
+    margin-top: 200rem;
+    width: auto;
+    height: 200%;
+    opacity: 0.5;
+    transform: rotate(340deg);
+}
+
+.imageFour {
+    width: 120%;
+    height: auto;
+    opacity: 0.5;
+    margin-top: 150rem;
+}
+
+.imageFive {
+    width: 130%;
+    height: auto;
+    opacity: 0.4;
+    margin-top: 180rem;
+}
+
